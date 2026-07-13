@@ -17,53 +17,72 @@ export default function About() {
     {
       icon: Eye,
       title: 'Visi',
-      desc: 'Terwujudnya perempuan yang berdaulat, mandiri, berkeadilan, serta memiliki akses yang setara terhadap sumber daya, kesempatan, dan pengambilan keputusan di semua aspek kehidupan.'
+      desc: 'Pemberdayaan perempuan & transformasi sosial bagi status dan peran perempuan dalam masyarakat melalui peningkatan akses dan kontrol perempuan terhadap sumberdaya yang ada dan dirinya, guna menciptakan tatanan masyarakat yang lebih egaliter, demokratis dan berkeadilan gender.'
     },
     {
       icon: Target,
       title: 'Misi',
       desc: (
-        <ul className="list-disc pl-4 space-y-1 mt-1 text-xs sm:text-sm text-zinc-555 dark:text-zinc-400">
-          <li>Mengembangkan kapasitas kepemimpinan perempuan di tingkat basis.</li>
-          <li>Memperkuat organisasi perempuan agar mandiri dan berkelanjutan.</li>
-          <li>Mendorong keadilan gender melalui pendidikan, advokasi, dan pengorganisasian masyarakat.</li>
-          <li>Mengembangkan kerja sama lintas komunitas dan jaringan untuk memperluas dampak pemberdayaan perempuan.</li>
+        <ul className="list-disc pl-4 space-y-1.5 mt-1 text-xs sm:text-sm text-zinc-650 dark:text-zinc-400">
+          <li>Meningkatkan taraf hidup, pengetahuan dan kemampuan perempuan di tingkat basis.</li>
+          <li>Mengembangkan kapasitas kelembagaan lokal bagi perempuan dan kepemimpinan perempuan dengan pendekatan desentralisasi sumberdaya.</li>
+          <li>Membangun gerakan bersama untuk mendorong dan menciptakan kebijakan lokal yang setara dan berkeadilan gender.</li>
         </ul>
       )
     },
     {
       icon: Users,
-      title: 'Pemberdayaan Organisasi Perempuan',
-      desc: 'Membangun kapasitas kelompok perempuan agar mampu menjadi organisasi yang mandiri, kuat, dan berkelanjutan dalam memperjuangkan hak-haknya.'
+      title: 'Nilai Dasar: Egaliter & Demokratis',
+      desc: (
+        <div className="space-y-2 mt-1">
+          <p><strong>Egaliter:</strong> Nilai kesetaraan bagi setiap manusia, menjunjung tinggi hak-hak asasi manusia (anti diskriminasi / CEDAW).</p>
+          <p><strong>Demokratis:</strong> Menjunjung tinggi partisipasi perempuan dalam pengambilan keputusan menyangkut kepentingan, aktualisasi diri, dan masa depannya.</p>
+        </div>
+      )
     },
     {
-      icon: BookOpen,
-      title: 'Pendidikan & Penguatan Kapasitas',
-      desc: 'Menyelenggarakan pelatihan kepemimpinan, literasi digital, pendidikan politik, kewirausahaan, dan peningkatan keterampilan perempuan.'
+      icon: Heart,
+      title: 'Nilai Dasar: Keadilan & Lingkungan',
+      desc: (
+        <div className="space-y-2 mt-1">
+          <p><strong>Keadilan Gender:</strong> Mendorong pola relasi laki-laki dan perempuan yang adil baik di tingkat keluarga, komunitas, maupun negara.</p>
+          <p><strong>Kelestarian Lingkungan:</strong> Upaya pemberdayaan dilakukan dengan cara-cara yang tidak merusak alam untuk menjamin keberlanjutan antar generasi.</p>
+        </div>
+      )
     },
     {
       icon: Scale,
-      title: 'Advokasi Hak Perempuan',
-      desc: 'Mendampingi perempuan dalam memperoleh akses terhadap keadilan, perlindungan hukum, kebijakan publik yang berpihak, serta penghapusan segala bentuk kekerasan.'
+      title: 'Nilai Dasar: Kearifan Lokal',
+      desc: 'Pemberdayaan dilakukan dengan menggali nilai dan pranata sosial lokal yang hidup di masyarakat untuk melindungi dan menjunjung tinggi hak, harkat, dan martabat perempuan, dengan tetap kritis memperbaharui nilai patriarki yang merugikan.'
     }
   ];
 
   const timelineEvents = [
     {
-      year: '1986',
-      desc: 'PPSW mulai mendampingi kelompok-kelompok perempuan di tingkat basis sebagai gerakan pemberdayaan perempuan.'
+      title: 'Cakupan Wilayah',
+      desc: 'Pendampingan aktif PPSW Banten tersebar di berbagai wilayah administrasi basis dampingan di Provinsi Banten.',
+      stats: [
+        { label: 'Kabupaten', value: '4', note: 'Pandeglang, Lebak, Serang, Tangerang' },
+        { label: 'Kecamatan Binaan', value: '13', note: 'Kecamatan aktif dampingan' },
+        { label: 'Desa Dampingan', value: '34', note: 'Desa/Kelurahan tingkat basis' }
+      ]
     },
     {
-      year: '2005',
-      desc: 'PPSW bertransformasi menjadi organisasi asosiasi yang terdiri dari beberapa lembaga otonom di berbagai wilayah Indonesia.'
+      title: 'Kelompok & Dampingan',
+      desc: 'Membangun kesadaran kritis, memperkuat kepemimpinan, dan mengorganisasi perempuan tingkat basis.',
+      stats: [
+        { label: 'Perempuan Dampingan', value: '2.359', note: 'Jiwa perempuan aktif basis' },
+        { label: 'Kelompok/Koperasi', value: '50', note: 'Kelompok Pra Koperasi & Koperasi' }
+      ]
     },
     {
-      year: '2021',
-      desc: 'Strategi desentralisasi diperkuat dengan pembentukan wilayah otonom baru agar pelayanan dan pendampingan lebih dekat dengan masyarakat.'
-    },
-    {
-      year: '2026',
-      desc: 'Melalui Mubes Asosiasi PPSW, PPSW Banten resmi berdiri sebagai lembaga otonom yang melanjutkan gerakan pemberdayaan perempuan di Provinsi Banten.'
+      title: 'Kemandirian Finansial',
+      desc: 'Pengembangan modal usaha anggota koperasi perempuan secara mandiri dan berkelanjutan bebas rentenir.',
+      stats: [
+        { label: 'Simpanan Anggota', value: 'Rp 4.869.154.103', note: 'Simpanan kelompok' },
+        { label: 'Pinjaman Disalurkan', value: 'Rp 5.377.995.550', note: 'Sirkulasi modal usaha' },
+        { label: 'Asset Koperasi', value: 'Rp 6.618.699.573', note: 'Akumulasi kekayaan koperasi' }
+      ]
     }
   ];
 
@@ -171,12 +190,12 @@ export default function About() {
             </div>
 
             {/* Profile Content */}
-            <div className="pt-4 space-y-4">
-              <p className="text-zinc-700 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
-                PPSW Banten adalah organisasi perempuan yang berpihak pada hak-hak dan kepentingan perempuan untuk mewujudkan keadilan, kesejahteraan, dan kesetaraan. Sejak berdiri, PPSW Banten secara konsisten mendampingi kelompok perempuan di tingkat basis, memperkuat kapasitas kepemimpinan perempuan, serta membangun solidaritas untuk menciptakan perubahan sosial yang berkelanjutan.
+            <div className="pt-4 space-y-4 text-xs sm:text-sm md:text-base">
+              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                PPSW Banten adalah Organisasi Non Pemerintah (Ornop) yang berfokus pada pemberdayaan perempuan, penguatan ekonomi, kepemimpinan perempuan, keadilan gender, serta pembangunan masyarakat yang inklusif di Provinsi Banten. Kami berupaya menumbuhkan kesadaran kritis masyarakat, meningkatkan kapasitas, dan membuka akses melalui kegiatan utamanya yaitu pengorganisasian masyarakat dengan pintu masuk melalui kegiatan ekonomi dengan pembentukan kelompok perempuan berbasis kegiatan Pra Koperasi.
               </p>
-              <p className="text-zinc-700 dark:text-zinc-300 text-sm sm:text-base leading-relaxed">
-                Kami percaya bahwa setiap perempuan memiliki potensi untuk menjadi agen perubahan. Dengan memperkuat organisasi perempuan di basis, memperluas akses terhadap pendidikan, ekonomi, hukum, dan ruang partisipasi publik, PPSW Banten terus mendorong lahirnya masyarakat yang lebih adil, inklusif, dan setara.
+              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal">
+                Didirikan sejak Juni 1986 sebagai badan Pelaksana dari Yayasan An-Nisa Indonesia, PPSW bertransformasi menjadi Yayasan PPSW pada 1998 dan Perkumpulan PPSW pada 2003. Pada tahun 2005, PPSW menjadi organisasi Asosiasi dengan empat lembaga otonom. Melalui desentralisasi wilayah, pada Juni 2026 Mubes Asosiasi PPSW memandirikan PPSW Banten untuk melanjutkan gerakan pemberdayaan kelompok perempuan basis di Provinsi Banten secara terfokus dan efektif.
               </p>
             </div>
           </motion.div>
@@ -216,7 +235,7 @@ export default function About() {
                     <h4 className="font-serif font-extrabold text-base sm:text-lg text-secondary dark:text-white">
                       {val.title}
                     </h4>
-                    <div className="mt-1 text-xs sm:text-sm text-zinc-550 dark:text-zinc-400 leading-relaxed font-normal">
+                    <div className="mt-1 text-xs sm:text-sm text-zinc-655 dark:text-zinc-400 leading-relaxed font-normal">
                       {val.desc}
                     </div>
                   </div>
@@ -231,20 +250,20 @@ export default function About() {
           <div className="text-center max-w-2xl mx-auto mb-16 relative">
             <WatercolorBlob className="w-48 h-48 -top-12 left-1/2 -translate-x-1/2 opacity-40" seed={1} />
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary/10 text-secondary dark:bg-secondary/20 dark:text-accent text-xs font-bold uppercase tracking-wider mb-3">
-              Jejak Langkah
+              Capaian & Dampak
             </span>
             <h3 className="text-2xl sm:text-4xl font-serif font-extrabold text-secondary dark:text-white">
-              Perjalanan PPSW
+              Capaian Dampak Pendampingan
             </h3>
             <div className="h-0.5 w-16 bg-primary/30 mx-auto mt-4" />
           </div>
 
           {/* Clean Horizontal Timeline on Desktop / Vertical Stack on Mobile */}
-          <div className="relative border-l-2 border-primary/25 dark:border-primary/15 ml-4 md:ml-0 md:border-l-0 md:grid md:grid-cols-4 md:gap-6 lg:gap-8 before:absolute before:top-1/2 before:left-0 before:right-0 before:h-0.5 before:bg-primary/20 before:-translate-y-1/2 before:hidden before:md:block">
+          <div className="relative border-l-2 border-primary/25 dark:border-primary/15 ml-4 md:ml-0 md:border-l-0 md:grid md:grid-cols-3 md:gap-6 lg:gap-8 before:absolute before:top-1/2 before:left-0 before:right-0 before:h-0.5 before:bg-primary/20 before:-translate-y-1/2 before:hidden before:md:block">
             
             {timelineEvents.map((event, idx) => (
               <motion.div
-                key={event.year}
+                key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -256,12 +275,30 @@ export default function About() {
 
                 {/* Event Card */}
                 <div className="p-6 rounded-2xl bg-white/70 dark:bg-zinc-900/50 border border-primary/10 shadow-md group-hover:shadow-lg transition-all duration-300 hover:scale-[1.01] h-full flex flex-col justify-start text-left premium-card premium-card-hover">
-                  <span className="font-serif font-extrabold text-2xl sm:text-3xl text-primary mb-1.5 block leading-none">
-                    {event.year}
+                  <span className="font-serif font-extrabold text-xl sm:text-2xl text-secondary dark:text-white mb-1.5 block leading-tight">
+                    {event.title}
                   </span>
-                  <p className="text-xs sm:text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal">
+                  <p className="text-xs sm:text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal mb-3">
                     {event.desc}
                   </p>
+                  
+                  {event.stats && (
+                    <div className="mt-auto pt-3 border-t border-secondary/5 dark:border-white/5 space-y-2.5 w-full">
+                      {event.stats.map((st, sIdx) => (
+                        <div key={sIdx} className="p-2.5 rounded-xl bg-primary/5 dark:bg-primary/10 border border-primary/10 flex flex-col justify-start">
+                          <span className="font-serif font-extrabold text-base sm:text-lg text-primary leading-none">
+                            {st.value}
+                          </span>
+                          <span className="text-[10px] sm:text-xs font-bold text-secondary dark:text-zinc-200 mt-1">
+                            {st.label}
+                          </span>
+                          <span className="text-[9px] text-zinc-550 dark:text-zinc-400">
+                            {st.note}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

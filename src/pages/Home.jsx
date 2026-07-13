@@ -5,6 +5,7 @@ import About from '../components/About';
 import Structure from '../components/Structure';
 import Programs from '../components/Programs';
 import StrategicPrograms from '../components/StrategicPrograms';
+import WorkRegions from '../components/WorkRegions';
 import VolunteerCTA from '../components/VolunteerCTA';
 import Donation from '../components/Donation';
 import Testimonials from '../components/Testimonials';
@@ -33,6 +34,9 @@ export default function Home() {
       
       {/* Strategic Programs Section 2023-2025 */}
       <StrategicPrograms />
+      
+      {/* Work Regions Section */}
+      <WorkRegions />
       
       {/* Volunteer Registration CTA to Google Form */}
       <VolunteerCTA />

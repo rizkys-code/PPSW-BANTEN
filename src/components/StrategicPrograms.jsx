@@ -1,79 +1,89 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, CheckCircle2, Handshake, Sparkles } from 'lucide-react';
+import { Calendar, Handshake, Sparkles, MapPin, Users } from 'lucide-react';
 import { WatercolorBlob, Leaf1, LeafBranch } from './Decorations';
 
 export default function StrategicPrograms() {
   const strategicProgramsData = [
     {
-      name: 'IDEAS (Increasing Digital Skills for ASEAN Women MSMEs)',
-      year: '2023 - 2024',
+      name: 'Program "Enhancing Digital Economy Participation for ASEAN Women MSMEs" (IDEAS)',
+      year: '2023 - 2025',
+      partner: 'Kementerian Luar Negeri Republik Korea (ROK) & ASEAN-ROK Cooperation Fund (AKCF), bekerjasama dengan Asia Pacific Women’s Information Network Center (APWINC)',
+      location: 'Provinsi Banten',
       summary: 'Program peningkatan keterampilan pemasaran digital, keamanan digital, dan literasi e-commerce bagi perempuan pengusaha mikro.',
-      impact: 'Ratusan pelaku UMKM perempuan di Banten terampil menggunakan platform digital untuk naik kelas.',
-      partner: 'ASEAN Foundation & Google.org'
+      beneficiary: 'Pembagian Sertifikat dan Dana Pengembangan Usaha untuk 126 orang Perempuan Pelaku UMKM (Maret 2025). Evaluasi & Penelitian diikuti 126 orang Perempuan UMKM (September - Oktober 2025).'
     },
     {
-      name: 'Program Keamanan Digital',
-      year: '2023',
-      summary: 'Edukasi dan pelatihan praktis mengenai perlindungan data pribadi, literasi digital kritis, keamanan akun media sosial, serta penanganan KBGO.',
-      impact: 'Kelompok basis mampu mengidentifikasi KBGO dan mengamankan aset informasi pribadi.',
-      partner: 'SAFEnet / Mitra Jaringan'
+      name: 'Program Keamanan Digital Untuk Pelaku Usaha',
+      year: '01 April 2025 - 01 Mei 2026',
+      partner: 'Asosiasi PPSW (Pendanaan Internal)',
+      location: 'Provinsi Banten (Kabupaten Pandeglang, Lebak, dan Serang)',
+      summary: 'Edukasi dan pelatihan praktis mengenai perlindungan data pribadi, literasi digital kritis, keamanan akun media sosial, serta penanganan KBGO untuk pelaku usaha.',
+      beneficiary: 'Diakses oleh 300 orang Volunteer dengan penerima manfaat 9.000 orang Calon dan Pelaku Usaha.'
     },
     {
-      name: 'Akademi Paradigta Indonesia',
-      year: '2023 - 2025',
+      name: 'Program Akademi Paradigta Indonesia (API)',
+      year: 'Juni - Desember 2025',
+      partner: 'Yayasan Raudhatunnisa Indonesia',
+      location: 'Provinsi Banten (Kabupaten Pandeglang)',
       summary: 'Program pendidikan kepemimpinan, pengawasan anggaran daerah, dan pengorganisasian masyarakat bagi kader perempuan desa.',
-      impact: 'Lahirnya kader-kader pemimpin perempuan baru yang aktif mengawal musyawarah pembangunan desa.',
-      partner: 'PPSW Asosiasi'
+      beneficiary: 'Telah mewisuda 49 orang kader pemimpin perempuan tingkat desa.'
     },
     {
-      name: 'Jalin Nusantara',
-      year: '2024',
-      summary: 'Program penguatan jejaring kemitraan, pertukaran pengetahuan praktis, dan pemasaran produk koperasi perempuan lintas wilayah.',
-      impact: 'Solidaritas ekonomi terbangun dengan terbentuknya rantai pasokan produk antar koperasi perempuan.',
-      partner: 'Mitra Jaringan Advokasi'
+      name: 'Program Jalin Nusantara (Upscalling Sme’s At Tourist Village & R-Bumn Tigaraksa)',
+      year: 'September 2023 - Juli 2024',
+      partner: 'Tiktok (Program Asosiasi PPSW)',
+      location: 'Desa Cikasungka, Kec. Solear, Kab. Tangerang – Banten',
+      summary: 'Peningkatan kualitas hidup masyarakat terutama perempuan pelaku usaha di daerah wisata dengan penguasaan teknologi informasi dan komunikasi untuk pengembangan usaha mikro dan kecil.',
+      beneficiary: 'Tersedianya kerangka kerja usaha mikro, mendorong bisnis berkelanjutan di desa wisata, dan meningkatkan literasi digital komunitas.'
     },
     {
-      name: 'Akademi Paradigta Kepemimpinan Perempuan',
-      year: '2024 - 2025',
-      summary: 'Sekolah khusus untuk memperkuat keberanian politik, komunikasi publik, dan keterampilan advokasi kader perempuan.',
-      impact: 'Meningkatnya keterwakilan perempuan dalam keanggotaan BPD (Badan Permusyawaratan Desa) di Banten.',
-      partner: 'Yayasan PEKKA / Kemitraan'
+      name: 'Program Pendidikan Akademi Paradigta Pengembangan Kepemimpinan Perempuan Dalam Memimpin Gerakan Setiap Orang Menjadi Pembaharu (Everyone A Changemaker)',
+      year: 'April - Desember 2024',
+      partner: 'Yayasan Raudhatunnisa Indonesia (Program lintas wilayah Asosiasi PPSW)',
+      location: 'Kabupaten Lebak (Banten) & Kabupaten Sukabumi (Jawa Barat)',
+      summary: 'Program pendidikan khusus untuk mengembangkan kepemimpinan perempuan dalam memimpin gerakan agar setiap orang menjadi pembaharu (Everyone A Changemaker).',
+      beneficiary: 'Melahirkan kader pemimpin perempuan di tingkat desa untuk memimpin gerakan perubahan sosial.'
     },
     {
-      name: 'Grow Digital ASEAN',
-      year: '2023 - 2024',
-      summary: 'Edukasi kesiapan kerja digital, optimasi media sosial bisnis, dan literasi keuangan untuk pemuda dan perempuan pedesaan.',
-      impact: 'Memperluas kesempatan ekonomi mandiri di wilayah pedesaan Banten.',
-      partner: 'The Asia Foundation & Google.org'
+      name: 'Program Go Digital Asean Tahap Ke 2 (Grow Digital Asean)',
+      year: '31 Mei 2023 - Januari 2024',
+      partner: 'Google.org melalui The Asia Foundation (Program lintas wilayah Asosiasi PPSW)',
+      location: 'Provinsi Banten',
+      summary: 'Edukasi kesiapan kerja digital, optimasi media sosial bisnis, dan literasi keuangan untuk pemuda desa, calon pelaku usaha, maupun pelaku usaha yang ingin bertransformasi menjadi digital.',
+      beneficiary: 'Sasaran penerima manfaat sebanyak 17.500 orang usia produktif, di mana 70% penerima manfaatnya adalah perempuan.'
     },
     {
-      name: 'MADANI Civil Society Support Initiative',
-      year: '2023 - 2025',
-      summary: 'Penguatan tata kelola lembaga, akuntabilitas keuangan, transparansi, serta kapasitas advokasi kebijakan organisasi masyarakat sipil.',
-      impact: 'PPSW Banten diakui sebagai mitra pembangunan daerah yang kredibel dan akuntabel oleh Pemda.',
-      partner: 'USAID'
+      name: 'Program Madani – Civil Society Support Initiative',
+      year: 'Oktober 2020 - November 2023',
+      partner: 'USAID - FHI360',
+      location: 'Kabupaten Lebak – Banten',
+      summary: 'Meningkatkan peran serta masyarakat sipil dalam pembangunan untuk menciptakan pemerintahan yang kolaboratif (collaborative governance).',
+      beneficiary: 'Penguatan tata kelola lembaga lokal, akuntabilitas keuangan, transparansi, serta kapasitas advokasi kebijakan.'
     },
     {
-      name: 'Pertemuan Laki-Laki Mendukung Kepemimpinan Perempuan',
-      year: '2024',
-      summary: 'Forum diskusi dan pelibatan tokoh laki-laki basis untuk membangun kesepakatan kesetaraan peran di ranah domestik dan publik.',
-      impact: 'Meningkatnya dukungan keluarga/suami terhadap partisipasi sosial-ekonomi perempuan basis.',
-      partner: 'Mitra Jaringan Respons Gender'
+      name: 'Program Pertemuan Laki-Laki Untuk Mendukung Kepemimpinan Perempuan Dalam Perlindungan Berbasis Komunitas',
+      year: '16 Januari 2023 - 31 Mei 2023',
+      partner: 'Yappika ActionAid (YAA)',
+      location: 'Kabupaten Pandeglang dan Kabupaten Serang – Banten',
+      summary: 'Meningkatkan pemahaman tokoh laki-laki (agama, masyarakat, adat) tentang nilai-nilai kesetaraan gender untuk mendukung kepemimpinan perempuan.',
+      beneficiary: 'Mendapatkan dukungan tokoh laki-laki untuk memperkuat partisipasi perempuan dalam perlindungan berbasis komunitas.'
     },
     {
-      name: 'Women-Led Community Based Protection in Banten',
-      year: '2024 - 2025',
+      name: 'Program ‘Women-Led Community Based Protection In Banten’',
+      year: 'Mei 2022 - Juni 2023',
+      partner: 'Yappika ActionAid',
+      location: 'Kabupaten Pandeglang dan Kabupaten Serang, Provinsi Banten',
       summary: 'Inisiasi dan pelatihan tim tanggap perlindungan berbasis komunitas yang dipimpin langsung oleh tokoh perempuan di tingkat basis.',
-      impact: 'Terbentuknya pos pengaduan dan rujukan aman bagi korban kekerasan seksual dan eksploitasi.',
-      partner: 'UN Women / Kemitraan'
+      beneficiary: 'Dokumen Pemetaan Kerentanan, lahirnya PERDES Perlindungan Perempuan & Anak, PERDES Desa Siaga Bencana, PERDES Penguatan Ekonomi di 4 Desa 2 Kecamatan, dan Focal Point di 2 Kecamatan 2 Kabupaten.'
     },
     {
-      name: 'Perluasan Kesempatan Ekonomi Melalui Teknologi Informasi',
+      name: 'Program Perluasan Kesempatan Ekonomi Melalui Peningkatan Penguasaan Teknologi Dan Informasi (Lanjutan)',
       year: '2023 - 2025',
-      summary: 'Fasilitasi perangkat komputer, jaringan internet, dan software kasir/pembukuan digital bagi koperasi binaan.',
-      impact: 'Digitalisasi sistem keuangan koperasi perempuan agar transparan, cepat, dan akurat.',
-      partner: 'Kementerian Koperasi & UKM / Telkom'
+      partner: 'The Asia Foundation & Google (Program lintas wilayah Asosiasi PPSW)',
+      location: 'Kabupaten Pandeglang dan Kabupaten Lebak, Provinsi Banten',
+      summary: 'Peningkatan taraf hidup masyarakat marginal melalui perluasan kesempatan berusaha dan bekerja dengan pemanfaatan teknologi informasi dan komunikasi.',
+      beneficiary: 'Perluasan kesempatan bekerja/berusaha bagi koperasi binaan, pelaku usaha mikro, dan masyarakat marginal.'
     }
   ];
 
@@ -134,29 +144,38 @@ export default function StrategicPrograms() {
                 <h3 className="font-serif font-extrabold text-lg sm:text-xl text-secondary dark:text-white leading-snug group-hover:text-primary dark:group-hover:text-accent-light transition-colors duration-250 mb-3">
                   {prog.name}
                 </h3>
-                <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
+                <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 font-normal">
                   {prog.summary}
                 </p>
               </div>
 
               {/* Details & Metadata */}
-              <div className="w-full space-y-3.5 mt-4 pt-4 border-t border-zinc-200/50 dark:border-zinc-800/50 text-xs text-left">
-                {/* Impact */}
+              <div className="w-full space-y-3 mt-4 pt-4 border-t border-zinc-200/50 dark:border-zinc-800/50 text-xs text-left">
+                {/* Location */}
                 <div className="flex items-start gap-2.5">
-                  <CheckCircle2 className="w-4.5 h-4.5 text-emerald-500 shrink-0 mt-0.5" />
+                  <MapPin className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Dampak Utama:</span>
-                    <span className="text-zinc-600 dark:text-zinc-400 font-normal leading-relaxed">{prog.impact}</span>
+                    <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Lokasi Program:</span>
+                    <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed">{prog.location}</span>
                   </div>
                 </div>
 
                 {/* Partner */}
-                {prog.partner && (
+                <div className="flex items-start gap-2.5">
+                  <Handshake className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Mitra Pendukung / Pendanaan:</span>
+                    <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed">{prog.partner}</span>
+                  </div>
+                </div>
+
+                {/* Beneficiary */}
+                {prog.beneficiary && (
                   <div className="flex items-start gap-2.5">
-                    <Handshake className="w-4.5 h-4.5 text-primary shrink-0 mt-0.5" />
+                    <Users className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Mitra Pendukung:</span>
-                      <span className="text-zinc-600 dark:text-zinc-400 font-normal leading-relaxed">{prog.partner}</span>
+                      <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Penerima Manfaat / Capaian:</span>
+                      <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed">{prog.beneficiary}</span>
                     </div>
                   </div>
                 )}

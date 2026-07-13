@@ -13,105 +13,106 @@ export default function Programs() {
       title: 'Pengorganisasian Masyarakat',
       icon: Users,
       gradient: 'from-primary to-accent',
-      description: 'Pemberdayaan dan pendampingan kelompok perempuan di tingkat basis (akar rumput) untuk meningkatkan kepedulian, kesadaran hak, dan solidaritas sosial.',
-      detailedInfo: 'Program ini berfokus pada pendampingan intensif bagi kelompok perempuan akar rumput. Melalui pengorganisasian di tingkat desa/kelurahan, kami membangun ruang solidaritas, memfasilitasi diskusi rutin mengenai hak-hak perempuan, kepemimpinan, serta penyelesaian masalah sosial secara kolektif.',
+      description: 'Program utama PPSW Banten untuk meningkatkan kesadaran kritis, memperkuat kapasitas, serta menumbuhkan kepemimpinan perempuan melalui proses pengorganisasian masyarakat berbasis kebutuhan komunitas.',
+      detailedInfo: 'Program ini merupakan kegiatan utama PPSW Banten untuk meningkatkan kesadaran kritis, menambah kapasitas dan menumbuhkan kepemimpinan perempuan. Pola pendekatan diterapkan sesuai dengan kebutuhan dan situasi masyarakat dalam melaksanakan program ini. Pada tahap awal umumnya PPSW Banten menerapkan pola pengorganisasian kelompok masyarakat perempuan dengan aktivitas ekonomi sebagai pintu masuk utama.',
       outcomes: [
-        'Pembentukan Kelompok Perempuan Basis Baru',
-        'Pelatihan Kepemimpinan & Pengorganisasian',
-        'Pendampingan Rembuk Warga & Forum Komunitas',
-        'Pengembangan Solidaritas Sosial Lintas Wilayah'
+        'Konsolidasi masyarakat',
+        'Pembentukan kelompok perempuan',
+        'Identifikasi persoalan',
+        'Agenda aksi bersama',
+        'Monitoring & Evaluasi',
+        'Penguatan ekonomi sebagai pintu masuk'
       ],
-      metric: 'Pendampingan aktif kelompok perempuan basis'
+      metric: 'Pendampingan aktif kelompok perempuan akar rumput'
     },
     {
       id: 'koperasi',
-      title: 'Lembaga Keuangan Mikro',
+      title: 'Lembaga Keuangan Mikro Berbasis Pra Koperasi & Koperasi',
       icon: ShoppingBag,
       gradient: 'from-secondary to-secondary-light',
-      description: 'Pengembangan kelompok simpan pinjam perempuan menuju pembentukan koperasi mandiri untuk memperkuat kemandirian ekonomi perempuan basis.',
-      detailedInfo: 'Kami membantu perempuan akar rumput membangun Lembaga Keuangan Mikro (LKM) berbasis pra-koperasi dan koperasi perempuan. Melalui kelompok simpan pinjam, anggota belajar mengelola modal usaha, menghindari jerat rentenir, dan mengembangkan kemandirian finansial keluarga.',
+      description: 'Memfasilitasi terbentuknya koperasi dan lembaga keuangan mikro sebagai bagian dari penguatan ekonomi perempuan di tingkat basis.',
+      detailedInfo: 'PPSW Banten memfasilitasi terbentuknya lembaga keuangan mikro di kelompok-kelompok dampingan dalam bentuk koperasi sebagai bagian dari program penguatan ekonomi perempuan di tingkat basis untuk menuju kemandirian finansial keluarga.',
       outcomes: [
-        'Pendirian & Binaan Koperasi Perempuan Mandiri',
-        'Fasilitasi Permodalan Usaha Mikro Anggota',
-        'Edukasi Pengelolaan Kelompok Simpan Pinjam',
-        'Mentoring Manajemen Koperasi Profesional'
+        'Koperasi Perempuan',
+        'Literasi Keuangan',
+        'Penguatan Ekonomi',
+        'Kemandirian Usaha'
       ],
-      metric: 'Pengembangan koperasi perempuan mandiri'
+      metric: 'Pembentukan dan pembinaan koperasi perempuan mandiri'
     },
     {
       id: 'pelatihan',
       title: 'Pelatihan',
       icon: GraduationCap,
       gradient: 'from-primary to-primary-dark',
-      description: 'Penyelenggaraan pelatihan komprehensif mulai dari Literasi Digital, Literasi Keuangan, Paralegal, Pengorganisasian, UKM, Kesehatan Reproduksi, dan Koperasi.',
-      detailedInfo: 'PPSW Banten berkomitmen membekali perempuan dengan berbagai keterampilan penting. Pelatihan yang kami laksanakan mencakup literasi digital, manajemen keuangan keluarga & UKM, bimbingan paralegal hukum, pemahaman kesehatan reproduksi, hingga tata kelola organisasi koperasi.',
+      description: 'Menyelenggarakan berbagai pelatihan untuk masyarakat dan mitra guna membekali mereka dengan keterampilan teknis, manajerial, dan pengembangan diri.',
+      detailedInfo: 'PPSW Banten memfasilitasi berbagai pelatihan bagi masyarakat mitra dan lembaga-lembaga lain yang membutuhkan. Pelatihan yang diberikan berkaitan dengan keterampilan teknis, manajerial, dan pengembangan diri.',
       outcomes: [
-        'Pelatihan Literasi Digital & Keuangan UKM',
-        'Pendidikan Paralegal (Bantuan Hukum Basis)',
-        'Edukasi Kesehatan Reproduksi Perempuan',
-        'Pelatihan Manajemen Usaha & Koperasi'
+        'Pelatihan Dasar Kelompok/Koperasi',
+        'Seri Pelatihan UKM',
+        'Community Organizing',
+        'Literasi Keuangan',
+        'Literasi Digital',
+        'Penyadaran Kesehatan Reproduksi',
+        'Paralegal'
       ],
-      metric: 'Pelatihan berkelanjutan bagi perempuan basis'
+      metric: 'Pelatihan terpadu peningkatan kapasitas masyarakat basis'
     },
     {
       id: 'seminar',
       title: 'Seminar & Lokakarya',
       icon: Handshake,
       gradient: 'from-accent to-accent-dark',
-      description: 'Penyelenggaraan forum diskusi ilmiah, seminar, dan lokakarya untuk mengkaji isu-isu strategis gender, hak perempuan, dan kebijakan publik.',
-      detailedInfo: 'PPSW Banten aktif menyelenggarakan seminar dan lokakarya baik di tingkat lokal maupun regional. Kegiatan ini bertujuan mempertemukan berbagai stakeholder—mulai dari akademisi, pemerintah, organisasi masyarakat sipil, hingga perwakilan basis—untuk mengadvokasi kebijakan publik yang responsif gender.',
+      description: 'Memfasilitasi seminar dan lokakarya tingkat lokal, nasional, dan regional sebagai bagian dari upaya advokasi perempuan.',
+      detailedInfo: 'PPSW Banten memfasilitasi berbagai seminar dan lokakarya tingkat lokal, nasional, dan regional sebagai bagian dari upaya advokasi. Persoalan yang berkaitan dengan kepentingan perempuan merupakan fokus seminar dan lokakarya yang diorganisir dan difasilitasi oleh PPSW Banten.',
       outcomes: [
-        'Advokasi Kebijakan Publik Responsif Gender',
-        'Diskusi Kajian Kasus & Isu Hak Perempuan',
-        'Kolaborasi Lintas Lembaga & Sektor Publik',
-        'Perumusan Rekomendasi Rencana Aksi Daerah'
+        'Penyelenggaraan seminar lokal & nasional',
+        'Lokakarya kajian isu-isu gender strategis',
+        'Advokasi kebijakan publik responsif gender',
+        'Penyusunan rencana aksi bersama stakeholders'
       ],
-      metric: 'Seminar & lokakarya berkala tiap tahun'
+      metric: 'Seminar & lokakarya berkala tingkat nasional/lokal'
     },
     {
       id: 'penerbitan',
       title: 'Penerbitan',
       icon: Send,
       gradient: 'from-secondary-light to-secondary-dark',
-      description: 'Publikasi berkala mengenai hasil kajian, panduan advokasi, laporan perkembangan gerakan perempuan, serta media komunikasi komunitas.',
-      detailedInfo: 'Divisi penerbitan PPSW Banten bertugas mendokumentasikan ide, hasil kajian lapangan, modul pelatihan, serta panduan hukum/advokasi. Publikasi ini didistribusikan ke jaringan komunitas, akademisi, dan instansi pemerintah guna memperluas referensi gerakan perempuan.',
+      description: 'Publikasi buku, laporan, dan berbagai pengetahuan mengenai isu perempuan berdasarkan pengalaman lapangan maupun kajian para ahli.',
+      detailedInfo: 'Program ini merupakan upaya mempublikasikan informasi tentang isu perempuan, mendokumentasikan modul pelatihan, serta panduan advokasi berdasarkan temuan lapang maupun yang ditulis oleh para ahli.',
       outcomes: [
-        'Penyusunan & Distribusi Buletin Gerakan',
-        'Penerbitan Modul Pelatihan Kepemimpinan',
-        'Publikasi Panduan Advokasi Hak Perempuan',
-        'Penyediaan Media Komunikasi Akar Rumput'
+        'Publikasi berkala hasil temuan lapangan',
+        'Dokumentasi modul pelatihan kepemimpinan',
+        'Penerbitan panduan advokasi hak perempuan',
+        'Penyebaran kajian ilmiah tentang keadilan gender'
       ],
-      metric: 'Modul & buletin komunitas berkala'
+      metric: 'Penerbitan buletin & modul berkala'
     },
     {
       id: 'buku',
       title: 'Buku',
       icon: BookOpen,
       gradient: 'from-primary to-accent',
-      description: 'Penerbitan buku literatur gerakan perempuan seperti "Pentingnya Kesehatan Lingkungan", "Cerita Sukses PPSW Banten", dan "Ada Lentera di Antara Kita".',
-      detailedInfo: 'PPSW Banten menerbitkan buku-buku literatur yang merangkum kisah inspiratif perempuan basis, panduan praktis kesehatan lingkungan, serta perjuangan pemberdayaan di wilayah Banten. Buku ini menjadi lentera penyemangat bagi gerakan perempuan di berbagai daerah.',
+      description: 'Menerbitkan buku-buku literatur gerakan perempuan seperti "Pentingnya Kesehatan Lingkungan", "Cerita Sukses PPSW Banten", dan "Ada Lentera di Antara Kita".',
+      detailedInfo: 'PPSW Banten menerbitkan buku-buku literatur yang merangkum kisah inspiratif perempuan basis, panduan praktis kesehatan lingkungan, serta perjuangan pemberdayaan di wilayah Banten.',
       outcomes: [
-        'Buku "Pentingnya Kesehatan Lingkungan"',
-        'Buku "Cerita Sukses PPSW Banten"',
-        'Buku "Ada Lentera di Antara Kita"',
-        'Penyebaran Inspirasi Perjuangan Perempuan'
+        'Pentingnya Kesehatan Lingkungan',
+        'Cerita Sukses PPSW Banten – Caritas Australia',
+        'Ada Lentera Diantara Kita'
       ],
-      metric: 'Koleksi buku literatur gerakan mandiri'
+      metric: 'Penerbitan buku literatur gerakan mandiri'
     },
     {
       id: 'video',
-      title: 'Video Dokumenter',
+      title: 'Video',
       icon: Video,
       gradient: 'from-amber-500 to-primary',
-      description: 'Produksi media audio-visual dan video dokumenter yang mendokumentasikan perjuangan, kisah sukses, serta realitas kehidupan perempuan di tingkat basis.',
-      detailedInfo: 'Kami memproduksi video dokumenter untuk menyuarakan aspirasi perempuan basis secara visual. Video ini mendokumentasikan tantangan hidup sehari-hari, proses pengorganisasian, serta kisah sukses kemandirian ekonomi koperasi perempuan binaan di Provinsi Banten.',
+      description: 'Menyajikan dokumentasi audio-visual tentang kisah sukses pemberdayaan masyarakat melalui penguatan ekonomi perempuan.',
+      detailedInfo: 'Kami memproduksi video dokumentasi untuk menyuarakan aspirasi perempuan basis secara visual dan menyebarluaskan cerita perubahan sosial digital koperasi binaan kami.',
       outcomes: [
-        'Dokumentasi Profil Kelompok Perempuan Basis',
-        'Video Kampanye Sosial & Hak-Hak Perempuan',
-        'Media Pembelajaran Visual bagi Komunitas',
-        'Penyebaran Cerita Perubahan Sosial Digital'
+        'Ada Lentera Diantara Kita'
       ],
-      metric: 'Koleksi dokumenter audio-visual'
+      metric: 'Dokumenter video kisah sukses pemberdayaan perempuan'
     }
   ];
 

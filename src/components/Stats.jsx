@@ -3,7 +3,7 @@ import { Users, BookOpen, MapPin, Gift, Heart } from 'lucide-react';
 import { motion, useInView } from 'framer-motion';
 import { Leaf1, Flower, WatercolorBlob } from './Decorations';
 
-function AnimatedCounter({ end, suffix = "", duration = 1500 }) {
+function AnimatedCounter({ end, decimals = 0, suffix = "", duration = 1500 }) {
   const [count, setCount] = useState(0);
   const elementRef = useRef(null);
   const isInView = useInView(elementRef, { once: true, margin: '-50px' });
@@ -21,7 +21,7 @@ function AnimatedCounter({ end, suffix = "", duration = 1500 }) {
       // easeOutQuad function
       const easeProgress = progress * (2 - progress);
       
-      setCount(Math.floor(easeProgress * end));
+      setCount(easeProgress * end);
 
       if (progress < 1) {
         requestAnimationFrame(animate);
@@ -31,9 +31,14 @@ function AnimatedCounter({ end, suffix = "", duration = 1500 }) {
     requestAnimationFrame(animate);
   }, [isInView, end, duration]);
 
+  const formattedCount = count.toLocaleString('id-ID', {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  });
+
   return (
     <span ref={elementRef} className="font-serif font-extrabold text-2xl sm:text-4xl lg:text-5xl tabular-nums tracking-tight">
-      {count.toLocaleString('id-ID')}{suffix}
+      {formattedCount}{suffix}
     </span>
   );
 }
@@ -42,11 +47,12 @@ export default function Stats() {
   const statsData = [
     {
       id: 1,
-      label: 'Relawan Aktif',
-      end: 5000,
-      suffix: '+',
-      description: 'Pemuda & profesional',
-      footnote: 'Siap mengabdi',
+      label: 'Perempuan Dampingan',
+      end: 2359,
+      decimals: 0,
+      suffix: '',
+      description: 'Pemberdayaan tingkat basis',
+      footnote: 'Tangguh & berdaya',
       icon: Users,
       colorClass: 'from-primary to-accent',
       bgColor: 'bg-primary/5',
@@ -54,11 +60,12 @@ export default function Stats() {
     },
     {
       id: 2,
-      label: 'Program Kerja',
-      end: 200,
-      suffix: '+',
-      description: 'Pendidikan & UMKM',
-      footnote: 'Sesuai kebutuhan',
+      label: 'Koperasi & Kelompok',
+      end: 50,
+      decimals: 0,
+      suffix: '',
+      description: 'Lembaga keuangan mikro',
+      footnote: 'Kemandirian ekonomi',
       icon: BookOpen,
       colorClass: 'from-secondary to-secondary-light',
       bgColor: 'bg-secondary/5',
@@ -67,10 +74,11 @@ export default function Stats() {
     {
       id: 3,
       label: 'Wilayah Binaan',
-      end: 18,
-      suffix: ' Kota',
-      description: 'Kabupaten/Kota aktif',
-      footnote: 'Hingga pelosok',
+      end: 34,
+      decimals: 0,
+      suffix: ' Desa',
+      description: 'Tersebar di 13 Kecamatan',
+      footnote: '4 Kabupaten di Banten',
       icon: MapPin,
       colorClass: 'from-amber-600 to-primary',
       bgColor: 'bg-amber-500/5',
@@ -78,11 +86,12 @@ export default function Stats() {
     },
     {
       id: 4,
-      label: 'Penerima Manfaat',
-      end: 12000,
-      suffix: '+',
-      description: 'Perempuan mandiri',
-      footnote: 'Maju & tangguh',
+      label: 'Aset Koperasi',
+      end: 6.6,
+      decimals: 1,
+      suffix: ' Milyar+',
+      description: 'Akumulasi mandiri anggota',
+      footnote: 'Bebas jerat rentenir',
       icon: Gift,
       colorClass: 'from-primary-dark to-primary',
       bgColor: 'bg-primary-dark/5',
@@ -158,7 +167,7 @@ export default function Stats() {
                 
                 {/* Counter value */}
                 <div className="text-secondary dark:text-white flex items-baseline relative z-10">
-                  <AnimatedCounter end={stat.end} suffix={stat.suffix} />
+                  <AnimatedCounter end={stat.end} decimals={stat.decimals} suffix={stat.suffix} />
                 </div>
                 
                 {/* Label */}

@@ -156,7 +156,7 @@ export default function Hero() {
               {/* Floating Card Container: Vertically stacked on screens below 768px, absolute on md+ */}
               <div className="flex flex-col md:block mt-6 md:mt-0 gap-4 w-full">
                 
-                {/* Floating Card 1: Total Bantuan */}
+                {/* Floating Card 1: Aset Koperasi */}
                 <motion.div 
                   initial={{ x: -20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -167,12 +167,12 @@ export default function Hero() {
                     <Heart className="w-5.5 h-5.5 fill-current" />
                   </div>
                   <div className="text-left">
-                    <p className="text-[10px] uppercase tracking-wider font-extrabold text-zinc-400 dark:text-zinc-500">Bantuan Disalurkan</p>
-                    <p className="text-base font-extrabold text-secondary dark:text-white">Rp 2.4 Milyar+</p>
+                    <p className="text-[10px] uppercase tracking-wider font-extrabold text-zinc-400 dark:text-zinc-500">Aset Koperasi</p>
+                    <p className="text-base font-extrabold text-secondary dark:text-white">Rp 6.6 Milyar+</p>
                   </div>
                 </motion.div>
 
-                {/* Floating Card 2: Active Beneficiaries */}
+                {/* Floating Card 2: Perempuan Dampingan */}
                 <motion.div 
                   initial={{ y: -20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
@@ -183,12 +183,12 @@ export default function Hero() {
                     <Award className="w-5.5 h-5.5" />
                   </div>
                   <div className="text-left">
-                    <p className="text-[10px] uppercase tracking-wider font-extrabold text-zinc-400 dark:text-zinc-500">Penerima Manfaat</p>
-                    <p className="text-sm font-extrabold text-secondary dark:text-white">12.000+ Jiwa</p>
+                    <p className="text-[10px] uppercase tracking-wider font-extrabold text-zinc-400 dark:text-zinc-500">Perempuan Dampingan</p>
+                    <p className="text-sm font-extrabold text-secondary dark:text-white">2.359 Jiwa</p>
                   </div>
                 </motion.div>
 
-                {/* Floating Card 3: Transparency */}
+                {/* Floating Card 3: Desa Binaan */}
                 <motion.div 
                   initial={{ x: 20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
@@ -196,7 +196,7 @@ export default function Hero() {
                   className="relative md:absolute md:bottom-16 md:-right-8 bg-[#FFFDF9]/95 dark:bg-zinc-950/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg border border-secondary/10 dark:border-white/10 flex items-center justify-center gap-2 z-20 hover:scale-105 transition-transform w-full md:w-auto premium-card premium-card-hover"
                 >
                   <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span className="text-xs font-bold text-secondary dark:text-zinc-200">100% Transparan</span>
+                  <span className="text-xs font-bold text-secondary dark:text-zinc-200">34 Desa Binaan</span>
                 </motion.div>
 
               </div>
