@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #F58A07;
+  --color-primary-light: #FFB347;
+  --color-primary-dark: #C46D04;
+  
+  --color-secondary: #4A2E16;
+  --color-secondary-light: #6E4624;
+  --color-secondary-dark: #2F1D0E;
+  
+  --color-accent: #FFB347;
+  --color-accent-light: #FFCA7A;
+  --color-accent-dark: #D48C28;
+  
+  --color-bg-light: #FFFDF9;
+  --color-bg-dark: #1A110B;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-handwritten: 'Caveat', cursive;
+}
+
+/* Custom dark mode utility variant for Tailwind v4 so we can toggle it with .dark class */
+@variant dark (&:where(.dark, .dark *));
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles for premium nonprofit feel */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+  background-color: #FFFDF9;
+  color: #2F1D0E;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+  background-color: #1A110B;
+  color: #FFFDF9;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 138, 7, 0.15);
+  border-radius: 9999px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 138, 7, 0.35);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 179, 71, 0.15);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 179, 71, 0.35);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+/* Glassmorphism utility classes based on warm brown and orange */
+.glass-nav {
+  background: rgba(255, 253, 249, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(245, 138, 7, 0.08);
+}
+.dark .glass-nav {
+  background: rgba(26, 17, 11, 0.85);
+  border-bottom: 1px solid rgba(255, 179, 71, 0.1);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(74, 46, 22, 0.06);
+}
+.dark .glass-card {
+  background: rgba(47, 32, 21, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: rgba(245, 138, 7, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(245, 138, 7, 0.15);
+}
+.dark .glass-card-hover:hover {
+  background: rgba(47, 32, 21, 0.6);
+  border-color: rgba(255, 179, 71, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(255, 179, 71, 0.15);
+}
+
+/* Custom glow animations and layouts */
+.glow-primary {
+  box-shadow: 0 0 40px -5px rgba(245, 138, 7, 0.15);
+}
+.glow-secondary {
+  box-shadow: 0 0 40px -5px rgba(74, 46, 22, 0.15);
+}
+.glow-accent {
+  box-shadow: 0 0 40px -5px rgba(255, 179, 71, 0.15);
+}
+
+/* Accordion slide animations */
+@keyframes slideDown {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes slideUp {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+/* Warm background noise / pattern textures */
+.bg-warm-pattern {
+  background-color: #FFFDF9;
+  background-image: radial-gradient(rgba(74, 46, 22, 0.038) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+.dark .bg-warm-pattern {
+  background-color: #1A110B;
+  background-image: radial-gradient(rgba(255, 179, 71, 0.02) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+.bg-warm-tint {
+  background-color: #FFF8EE;
+}
+.dark .bg-warm-tint {
+  background-color: #241810;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-handwritten {
+  font-family: var(--font-handwritten);
+}
+
+/* Custom class to elevate cards in Light Mode */
+html:not(.dark) .premium-card {
+  box-shadow: 
+    0 12px 32px rgba(15, 23, 42, 0.08), 
+    0 4px 12px rgba(15, 23, 42, 0.05) !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+html:not(.dark) .premium-card-hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+html:not(.dark) .premium-card-hover:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 
+    0 18px 40px rgba(15, 23, 42, 0.12), 
+    0 8px 18px rgba(15, 23, 42, 0.08) !important;
+}
+
