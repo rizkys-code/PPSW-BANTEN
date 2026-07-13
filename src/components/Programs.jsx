@@ -61,21 +61,6 @@ export default function Programs() {
       metric: 'Pelatihan terpadu peningkatan kapasitas masyarakat basis'
     },
     {
-      id: 'advokasi',
-      title: 'Advokasi',
-      icon: Handshake,
-      gradient: 'from-secondary to-accent',
-      description: 'Melakukan advokasi untuk menyuarakan kebijakan pemerintah yang menjamin perempuan bebas dari segala bentuk diskriminasi dan ketidakadilan gender di ruang publik maupun domestik.',
-      detailedInfo: 'Melakukan advokasi dalam rangka menyuarakan kebijakan pemerintah yang menjamin perempuan bebas dari segala bentuk diskriminasi dan ketidakadilan gender di ruang publik maupun domestik.',
-      outcomes: [
-        'Kebijakan & Regulasi: Mendukung lahirnya PERDES responsif gender, program Madani untuk tata kelola kolaboratif',
-        'Sosial & Komunitas: Organisir kelompok perempuan dengan pintu masuk ekonomi, libatkan tokoh laki-laki',
-        'Digital & Ekonomi: Akses digital setara via IDEAS, Go Digital ASEAN, dan Keamanan Digital',
-        'Kepemimpinan Perempuan: Akademi Paradigta Indonesia dengan semangat Everyone A Changemaker'
-      ],
-      metric: 'Advokasi kebijakan dan perubahan sosial'
-    },
-    {
       id: 'seminar',
       title: 'Seminar & Lokakarya',
       icon: Handshake,

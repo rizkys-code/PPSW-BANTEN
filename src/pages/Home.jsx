@@ -4,6 +4,7 @@ import Stats from '../components/Stats';
 import About from '../components/About';
 import Structure from '../components/Structure';
 import Programs from '../components/Programs';
+import Advocacy from '../components/Advocacy';
 import StrategicPrograms from '../components/StrategicPrograms';
 import WorkRegions from '../components/WorkRegions';
 import VolunteerCTA from '../components/VolunteerCTA';
@@ -31,6 +32,9 @@ export default function Home() {
       
       {/* Featured Programs Section with card grid & Radix details modal */}
       <Programs />
+      
+      {/* Advocacy Section */}
+      <Advocacy />
       
       {/* Strategic Programs Section 2023-2025 */}
       <StrategicPrograms />
