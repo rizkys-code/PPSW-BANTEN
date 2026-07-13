@@ -42,21 +42,38 @@ export default function Programs() {
     },
     {
       id: 'pelatihan',
-      title: 'Pelatihan',
+      title: 'Pendidikan & Penguatan Kapasitas',
       icon: GraduationCap,
       gradient: 'from-primary to-primary-dark',
-      description: 'Menyelenggarakan berbagai pelatihan untuk masyarakat dan mitra guna membekali mereka dengan keterampilan teknis, manajerial, dan pengembangan diri.',
-      detailedInfo: 'PPSW Banten memfasilitasi berbagai pelatihan bagi masyarakat mitra dan lembaga-lembaga lain yang membutuhkan. Pelatihan yang diberikan berkaitan dengan keterampilan teknis, manajerial, dan pengembangan diri.',
+      description: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, dan pendampingan untuk membangun kekuatan kolektif.',
+      detailedInfo: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, melakukan advokasi untuk membangun kekuatan kolektif dan pendampingan.',
       outcomes: [
-        'Pelatihan Dasar Kelompok/Koperasi',
-        'Seri Pelatihan UKM',
-        'Community Organizing',
-        'Literasi Keuangan',
+        'Pelatihan Kepemimpinan',
+        'Pelatihan Gender',
         'Literasi Digital',
-        'Penyadaran Kesehatan Reproduksi',
-        'Paralegal'
+        'Literasi Keuangan',
+        'Pendidikan Politik',
+        'Kewirausahaan',
+        'Pemetaan Kerentanan dan Risiko Keamanan Tanggap Bencana',
+        'Kesehatan Reproduksi',
+        'Pendampingan'
       ],
       metric: 'Pelatihan terpadu peningkatan kapasitas masyarakat basis'
+    },
+    {
+      id: 'advokasi',
+      title: 'Advokasi',
+      icon: Handshake,
+      gradient: 'from-secondary to-accent',
+      description: 'Melakukan advokasi untuk menyuarakan kebijakan pemerintah yang menjamin perempuan bebas dari segala bentuk diskriminasi dan ketidakadilan gender di ruang publik maupun domestik.',
+      detailedInfo: 'Melakukan advokasi dalam rangka menyuarakan kebijakan pemerintah yang menjamin perempuan bebas dari segala bentuk diskriminasi dan ketidakadilan gender di ruang publik maupun domestik.',
+      outcomes: [
+        'Kebijakan & Regulasi: Mendukung lahirnya PERDES responsif gender, program Madani untuk tata kelola kolaboratif',
+        'Sosial & Komunitas: Organisir kelompok perempuan dengan pintu masuk ekonomi, libatkan tokoh laki-laki',
+        'Digital & Ekonomi: Akses digital setara via IDEAS, Go Digital ASEAN, dan Keamanan Digital',
+        'Kepemimpinan Perempuan: Akademi Paradigta Indonesia dengan semangat Everyone A Changemaker'
+      ],
+      metric: 'Advokasi kebijakan dan perubahan sosial'
     },
     {
       id: 'seminar',

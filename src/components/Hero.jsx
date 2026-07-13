@@ -96,7 +96,7 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-6 sm:mt-8 text-base sm:text-lg text-zinc-650 dark:text-zinc-300 max-w-xl font-normal leading-relaxed"
             >
-              Setiap perempuan membawa cerita tentang kekuatan dan mimpi. Bersama PPSW Banten, langkah kecil dari akar rumput tumbuh menjadi gerakan besar yang menciptakan perubahan nyata bagi masyarakat.
+              Setiap perempuan membawa cerita tentang kekuatan dan mimpi. Bersama PPSW Banten, langkah kecil dari akar rumput tumbuh menjadi gerakan besar yang mampu mengubah dunia.
             </motion.p>
             
             {/* Call to Actions - responsive buttons */}

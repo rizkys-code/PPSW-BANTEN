@@ -64,9 +64,14 @@ export default function Navbar({ isDark, toggleTheme }) {
               alt="Logo PPSW Banten" 
               className="h-[50px] lg:h-[60px] w-auto object-contain rounded-[12px] bg-white p-[2px] shadow-sm transition-transform duration-300 group-hover:scale-105"
             />
-            <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">
-              PPSW BANTEN
-            </span>
+            <div className="flex flex-col">
+              <span className="font-bold text-xl tracking-tight bg-gradient-to-r from-secondary via-primary to-accent bg-clip-text text-transparent">
+                PPSW BANTEN
+              </span>
+              <span className="text-[10px] lg:text-xs font-medium text-zinc-500 dark:text-zinc-400 mt-0.5">
+                Center for Women’s Resources Development in Banten
+              </span>
+            </div>
           </a>
 
           {/* Desktop Nav Links */}
