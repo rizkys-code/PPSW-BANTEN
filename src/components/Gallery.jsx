@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image as ImageIcon, X, ZoomIn, Calendar, Tag } from 'lucide-react';
+import { Image as ImageIcon, X, ZoomIn, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Leaf1, LeafBranch, Flower, WatercolorBlob } from './Decorations';
 
@@ -17,14 +17,6 @@ export default function Gallery() {
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80',
-      title: 'Kelas Coding & Literasi Digital',
-      category: 'Pendidikan',
-      desc: 'Melatih kemampuan digital dasar, pemrograman web dasar, dan optimalisasi internet produktif untuk remaja putri.',
-      date: '28 Mei 2026'
-    },
-    {
-      id: 3,
       src: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
       title: 'Mentoring Kolaboratif Usaha',
       category: 'Pelatihan UMKM',
@@ -32,28 +24,12 @@ export default function Gallery() {
       date: '15 Mei 2026'
     },
     {
-      id: 4,
+      id: 3,
       src: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80',
       title: 'Bazaar UMKM Perempuan Kreatif',
       category: 'Pelatihan UMKM',
       desc: 'Festival produk lokal menampilkan hasil kerajinan tangan rajut, fesyen ecoprint, dan aneka kuliner olahan binaan.',
       date: '02 Mei 2026'
-    },
-    {
-      id: 5,
-      src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
-      title: 'Sosialisasi Kesehatan & Gizi Stunting',
-      category: 'Kesehatan',
-      desc: 'Pembagian paket makanan sehat tambahan serta konsultasi berkala tumbuh kembang anak prasejahtera.',
-      date: '18 April 2026'
-    },
-    {
-      id: 6,
-      src: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80',
-      title: 'Penyerahan Beasiswa Mahasiswi',
-      category: 'Beasiswa',
-      desc: 'Penyerahan simbolis beasiswa kuliah penuh untuk mahasiswi berprestasi di wilayah Banten.',
-      date: '05 April 2026'
     }
   ];
 
@@ -85,7 +61,7 @@ export default function Gallery() {
             </span>
           </h2>
           <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Dokumentasi nyata kegiatan PPSW BANTEN di lapangan bersama para relawan, instruktur, dan penerima manfaat.
+            Dokumentasi nyata kegiatan PPSW BANTEN di lapangan bersama para Pendamping, Kader, relawan, Mentor, dan penerima manfaat.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>

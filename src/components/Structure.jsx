@@ -52,22 +52,8 @@ export default function Structure() {
               Tata Kelola Organisasi
             </h4>
             <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4">
-              Struktur organisasi PPSW Banten dirancang secara profesional untuk menciptakan tata kelola yang demokratis, akuntabel, dan transparan:
+              Struktur organisasi PPSW Banten dirancang secara profesional untuk menciptakan tata kelola yang demokratis, akuntabel, dan transparan.
             </p>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-zinc-650 dark:text-zinc-400 list-disc pl-5">
-              <li>
-                <strong>Badan Pembina:</strong> Pengambil keputusan tertinggi yayasan didampingi oleh Dewan Penasihat (Advisory) dan Badan Pengawas.
-              </li>
-              <li>
-                <strong>Direktur:</strong> Pimpinan eksekutif operasional harian yang mengawasi unit-unit usaha mandiri organisasi.
-              </li>
-              <li>
-                <strong>Manajer Program:</strong> Mengoordinasikan Divisi Pengorganisasian, Divisi Advokasi, Divisi Publikasi, serta Staf Pelaksana Lapangan.
-              </li>
-              <li>
-                <strong>Manajer Keuangan:</strong> Bertanggung jawab atas integritas keuangan yayasan didukung oleh Koordinator Keuangan serta Kasir & Adm.
-              </li>
-            </ul>
           </div>
         </motion.div>
         

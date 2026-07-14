@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Leaf1, LeafBranch, BlobBackdrop, Flower, WatercolorBlob } from './Decorations';
+import kampanyeImg from '../assets/image/KAMPANYE HARI ANTI KEKERASAN TERHADAP PEREMPUAN (HKTP).jpg';
+import ratKoperasiImg from '../assets/image/RAT KOPERASI SEKUNDER KAB. PANDEGLANG & HALAL BIHALALMG-20260411-WA0049[1].jpg';
 
 export default function About() {
   const values = [
@@ -76,7 +78,7 @@ export default function About() {
     },
     {
       title: '2005',
-      desc: 'PPSW bertransformasi menjadi organisasi Asosiasi yang terdiri dari empat lembaga otonom yaitu PPSW Jakarta, PPSW Banten, PPSW Borneo dan PPSW Sumatera.',
+      desc: 'PPSW bertransformasi menjadi organisasi Asosiasi yang terdiri dari empat lembaga otonom yaitu PPSW Jakarta, PPSW Pasoendan, PPSW Borneo dan PPSW Sumatera.',
     },
     {
       title: '2021',
@@ -147,8 +149,8 @@ export default function About() {
             {/* Behind Image */}
             <div className="absolute top-4 left-4 w-[68%] aspect-square rounded-[24px] sm:rounded-[32px] overflow-hidden border-4 border-white dark:border-zinc-900 shadow-xl z-10 transition-transform duration-500 hover:scale-105">
               <img
-                src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=800&q=80"
-                alt="Pendampingan perempuan akar rumput"
+                src={kampanyeImg}
+                alt="Kampanye Hari Anti Kekerasan Terhadap Perempuan"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -158,8 +160,8 @@ export default function About() {
             {/* Front Image Overlay */}
             <div className="absolute bottom-4 right-4 w-[68%] aspect-square rounded-[24px] sm:rounded-[32px] overflow-hidden border-4 border-white dark:border-zinc-900 shadow-2xl z-20 transition-transform duration-500 hover:scale-105">
               <img
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80"
-                alt="Solidaritas kelompok basis"
+                src={ratKoperasiImg}
+                alt="RAT Koperasi Sekunder Banten"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />
@@ -171,7 +173,7 @@ export default function About() {
               <span className="font-serif font-extrabold text-2xl sm:text-3xl tracking-tight leading-none">Sejak 1986</span>
               <span className="text-[10px] text-white/95 font-extrabold uppercase tracking-wider mt-1.5 flex items-center gap-1">
                 <Heart className="w-3.5 h-3.5 fill-current text-white" />
-                Mendampingi Basis
+                Mendampingi Kelompok Perempuan Basis
               </span>
             </div>
           </motion.div>
@@ -187,7 +189,7 @@ export default function About() {
             {/* Opening Story (Narrative Highlight) */}
             <div className="border-l-4 border-primary pl-6 py-2">
               <p className="text-lg sm:text-xl font-serif italic font-extrabold text-secondary dark:text-[#FFF5EB] leading-relaxed">
-                "Setiap perempuan membawa cerita tentang kekuatan dan mimpi. Bersama PPSW Banten, langkah kecil dari akar rumput tumbuh menjadi gerakan besar yang mampu mengubah dunia."
+                "Setiap perempuan adalah pemimpin perubahan. PPSW Banten hadir untuk memastikan suara mereka tidak hanya terdengar, tetapi juga diikuti dengan tindakan nyata. Dari akar rumput, kami membangun solidaritas, memperkuat keberanian, dan menumbuhkan gerakan yang menjadikan kesetaraan sebagai fondasi masa depan"
               </p>
             </div>
 
@@ -212,7 +214,7 @@ export default function About() {
               Fokus Gerakan
             </span>
             <h3 className="text-2xl sm:text-4xl font-serif font-extrabold text-secondary dark:text-white">
-              Visi, Misi & Pilar Program
+              Visi, Misi, Nilai Dasar & Strategi
             </h3>
             <div className="h-0.5 w-16 bg-primary/30 mx-auto mt-4" />
           </div>
@@ -307,28 +309,28 @@ export default function About() {
             {[
               {
                 title: 'Cakupan Wilayah',
-                desc: 'Pendampingan aktif PPSW Banten tersebar di berbagai wilayah administrasi basis dampingan di Provinsi Banten.',
+                desc: 'Pendampingan aktif PPSW Banten tersebar di berbagai wilayah kerja Provinsi Banten.',
                 stats: [
                   { label: 'Kabupaten', value: '4', note: 'Pandeglang, Lebak, Serang, Tangerang' },
-                  { label: 'Kecamatan Binaan', value: '13', note: 'Kecamatan aktif dampingan' },
-                  { label: 'Desa Dampingan', value: '34', note: 'Desa/Kelurahan tingkat basis' }
+                  { label: 'Kecamatan', value: '13', note: 'Kecamatan aktif dampingan' },
+                  { label: 'Desa', value: '34', note: 'Desa/Kelurahan tingkat basis' }
                 ]
               },
               {
                 title: 'Kelompok & Dampingan',
                 desc: 'Membangun kesadaran kritis, memperkuat kepemimpinan, dan mengorganisir perempuan tingkat basis.',
                 stats: [
-                  { label: 'Perempuan Dampingan', value: '2.359', note: 'Jiwa perempuan aktif basis' },
-                  { label: 'Kelompok/Koperasi', value: '50', note: 'Kelompok Pra Koperasi & Koperasi' }
+                  { label: 'Perempuan', value: '2.359', note: 'Jiwa perempuan aktif basis' },
+                  { label: 'Kelompok Pra Koperasi & Koperasi', value: '50', note: '' }
                 ]
               },
               {
                 title: 'Kemandirian Finansial',
                 desc: 'Pengembangan modal usaha anggota koperasi perempuan secara mandiri dan berkelanjutan bebas rentenir.',
                 stats: [
-                  { label: 'Simpanan Anggota', value: 'Rp 4.869.154.103', note: 'Simpanan kelompok' },
-                  { label: 'Pinjaman Disalurkan', value: 'Rp 5.377.995.550', note: 'Sirkulasi modal usaha' },
-                  { label: 'Asset Koperasi', value: 'Rp 6.618.699.573', note: 'Akumulasi kekayaan koperasi' }
+                  { label: 'Simpanan Koperasi/kelompok', value: 'Rp 4.869.154.103', note: '' },
+                  { label: 'Sirkulasi modal usaha', value: 'Rp 5.377.995.550', note: '' },
+                  { label: 'Akumulasi kekayaan koperasi/Kelompok', value: 'Rp 6.618.699.573', note: '' }
                 ]
               }
             ].map((event, idx) => (

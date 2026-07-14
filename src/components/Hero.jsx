@@ -2,6 +2,9 @@ import React from 'react';
 import { Sparkles, Heart, ArrowRight, ShieldCheck, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Leaf1, LeafBranch, ScribbleUnderline, BlobBackdrop, ScribbleArrow, WatercolorBlob } from './Decorations';
+import baduyImg from '../assets/image/baduy2.jpeg';
+
+
 
 export default function Hero() {
   const containerVariants = {
@@ -137,14 +140,14 @@ export default function Hero() {
             <BlobBackdrop className="w-[110%] h-[110%] -bottom-10 -right-10 opacity-40 rotate-90" seed={2} />
 
             {/* Main Picture Wrapper */}
-            <div className="relative z-10 w-full max-w-[430px]">
+            <div className="relative z-10 w-full max-w-[500px] lg:max-w-[560px]">
               
-              {/* Responsive photo container: Height limited to 280-360px on Mobile, scales to cover */}
-              <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white dark:border-zinc-900 w-full h-[280px] sm:h-[350px] lg:h-[480px] bg-zinc-150 dark:bg-zinc-800 glow-primary transition-all duration-700 hover:scale-[1.01]">
+              {/* Responsive photo container: 3:2 aspect ratio matching the baduy2 image to display it without cropping */}
+              <div className="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white dark:border-zinc-900 w-full aspect-[3/2] bg-zinc-150 dark:bg-zinc-800 glow-primary transition-all duration-700 hover:scale-[1.01]">
                 <img 
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" 
+                  src={baduyImg} 
                   alt="Kegiatan Pemberdayaan PPSW" 
-                  className="w-full h-full object-cover select-none"
+                  className="w-full h-full object-cover object-center select-none"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
@@ -196,7 +199,7 @@ export default function Hero() {
                   className="relative md:absolute md:bottom-16 md:-right-8 bg-[#FFFDF9]/95 dark:bg-zinc-950/95 backdrop-blur-md px-4 py-3 rounded-xl shadow-lg border border-secondary/10 dark:border-white/10 flex items-center justify-center gap-2 z-20 hover:scale-105 transition-transform w-full md:w-auto premium-card premium-card-hover"
                 >
                   <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span className="text-xs font-bold text-secondary dark:text-zinc-200">34 Desa Binaan</span>
+                  <span className="text-xs font-bold text-secondary dark:text-zinc-200">34 Desa</span>
                 </motion.div>
 
               </div>

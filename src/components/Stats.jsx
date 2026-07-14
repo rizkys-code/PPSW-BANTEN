@@ -47,7 +47,7 @@ export default function Stats() {
   const statsData = [
     {
       id: 1,
-      label: 'Perempuan Dampingan',
+      label: 'Perempuan',
       end: 2359,
       decimals: 0,
       suffix: '',
@@ -73,7 +73,7 @@ export default function Stats() {
     },
     {
       id: 3,
-      label: 'Wilayah Binaan',
+      label: 'Wilayah',
       end: 34,
       decimals: 0,
       suffix: ' Desa',
@@ -86,11 +86,11 @@ export default function Stats() {
     },
     {
       id: 4,
-      label: 'Aset Koperasi',
+      label: 'Akumulasi Keuangan mandiri anggota',
       end: 6.6,
       decimals: 1,
       suffix: ' Milyar+',
-      description: 'Akumulasi mandiri anggota',
+      description: '',
       footnote: 'Bebas jerat rentenir',
       icon: Gift,
       colorClass: 'from-primary-dark to-primary',

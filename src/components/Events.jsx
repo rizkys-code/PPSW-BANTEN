@@ -9,36 +9,25 @@ export default function Events() {
   const eventsData = [
     {
       id: 1,
-      title: 'Webinar Hukum: Sosialisasi UU TPKS',
+      title: 'Festival Perempuan Berdaya 2026',
       date: '25 Juli 2026',
-      time: '14:00 - 16:30 WIB',
-      location: 'Live Zoom & YouTube',
-      desc: 'Pelajari pemahaman hukum, hak korban, dan tata cara pelaporan kekerasan seksual berdasarkan Undang-Undang TPKS terbaru bersama praktisi hukum.',
+      time: '09:00 - 18:00 WIB',
+      location: 'Jakarta Creative Hub',
+      desc: 'Pameran kreasi produk UMKM perempuan binaan, talkshow kepemimpinan bersama tokoh nasional, dan workshop digital coding dasar gratis.',
       status: 'Pendaftaran Dibuka',
       statusColor: 'bg-primary/10 text-primary dark:bg-primary/20 dark:text-accent-light',
       gradient: 'from-primary to-accent'
     },
     {
       id: 2,
-      title: 'Festival Perempuan Berdaya 2026',
-      date: '18 Agustus 2026',
-      time: '09:00 - 18:00 WIB',
-      location: 'Jakarta Creative Hub',
-      desc: 'Pameran kreasi produk UMKM perempuan binaan, talkshow kepemimpinan bersama tokoh nasional, dan workshop digital coding dasar gratis.',
-      status: 'Segera Hadir',
-      statusColor: 'bg-secondary/10 text-secondary dark:bg-secondary/20 dark:text-accent',
-      gradient: 'from-secondary to-secondary-light'
-    },
-    {
-      id: 3,
       title: 'Pelatihan UMKM Desa Binaan',
       date: '05 September 2026',
       time: '08:00 - 15:00 WIB',
       location: 'Aula Kabupaten Sumedang',
       desc: 'Mentoring tatap muka intensif mencakup cara pengolahan pangan sehat higienis, pembuatan kemasan kreatif, dan pendaftaran NIB UMKM.',
       status: 'Segera Hadir',
-      statusColor: 'bg-accent/15 text-primary-dark dark:bg-accent/20 dark:text-accent-light',
-      gradient: 'from-amber-500 to-primary'
+      statusColor: 'bg-secondary/10 text-secondary dark:bg-secondary/20 dark:text-accent',
+      gradient: 'from-secondary to-secondary-light'
     }
   ];
 

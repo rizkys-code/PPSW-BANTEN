@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Quote, Heart, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Leaf1, LeafBranch, Flower, BlobBackdrop, WatercolorBlob } from './Decorations';
+import ceritaSukses1 from '../assets/image/ceritaSukses1.jpeg';
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -9,36 +10,79 @@ export default function Testimonials() {
   const stories = [
     {
       id: 1,
-      name: 'Siti Rahma',
-      role: 'Pemilik Rahma Craft',
-      location: 'Serang',
-      program: 'Pelatihan UMKM',
+      name: 'Jakiyah Sholihah (Ade)',
+      role: 'Ketua KWPS Tulip Harum',
+      location: 'Saketi, Pandeglang',
+      program: 'Akademi Paradigta',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80',
-      featuredImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&h=550&q=80',
-      story: 'Sebelum dibimbing PPSW BANTEN, saya hanya pedagang kecil keliling. Setelah mengikuti mentoring digital marketing, omzet bulanan saya meroket hingga 300%. Kini saya mempekerjakan 4 ibu rumah tangga tetangga sekitar untuk memproduksi kerajinan rajut kami.',
-      footnote: 'UMKM Mandiri Tangguh'
+      featuredImage: ceritaSukses1,
+      story: (
+        <div className="not-italic text-left space-y-3 font-sans">
+          <h5 className="font-serif font-extrabold text-secondary dark:text-white text-base mb-1">
+            Program Akademi Paradigta Indonesia Tahun 2025
+          </h5>
+          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed font-serif italic mb-2">
+            "Setelah bergabung dengan Akademi Paradigta, saya mengalami pengembangan kepemimpinan yang mendorong kreativitas perempuan dan pemberdayaan komunitas di sekitar saya."
+          </p>
+          <div className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-primary block">
+              Pencapaian Utama
+            </span>
+            <ul className="text-xs text-zinc-650 dark:text-zinc-400 space-y-1 pl-4 list-disc font-serif not-italic">
+              <li>Memimpin <strong className="text-secondary dark:text-zinc-200">KWPS Tulip Harum</strong> yang berbadan hukum sejak 2007.</li>
+              <li>Menginisiasi produk inovasi ekonomi kreatif <strong className="text-secondary dark:text-zinc-200">"TEH SENJAKU"</strong>.</li>
+              <li>Mengembangkan kebun keluarga terintegrasi <strong className="text-secondary dark:text-zinc-200">"PARADIGTA'S GARDEN"</strong>.</li>
+            </ul>
+          </div>
+          <div className="pt-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-primary block">
+              Dampak Positif
+            </span>
+            <p className="text-xs text-zinc-650 dark:text-zinc-400 leading-relaxed font-serif">
+              Meningkatkan ekonomi kreatif keluarga lewat kreativitas perempuan dan memperkuat keterlibatan aktif komunitas.
+            </p>
+          </div>
+        </div>
+      ),
+      footnote: 'TEH SENJAKU'
     },
     {
       id: 2,
-      name: 'Anisa Fitriani',
-      role: 'Mahasiswi Teknik Informatika',
-      location: 'Tangerang',
-      program: 'Beasiswa Pendidikan',
+      name: 'Ibu Wati',
+      role: 'Focal Point Kesiapsiagaan Bencana',
+      location: 'Kec. Sumur, Pandeglang',
+      program: 'PRB Bencana',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&h=150&q=80',
       featuredImage: 'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&h=550&q=80',
-      story: 'Sebagai anak dari keluarga buruh cuci harian, memimpikan kuliah terasa mustahil. Beasiswa penuh dari PPSW BANTEN tidak hanya menanggung biaya UKT saya, tapi juga menyediakan asrama pembinaan kepemimpinan dan mentor yang membimbing karir teknologi saya.',
-      footnote: 'Penerima Beasiswa Prestasi'
-    },
-    {
-      id: 3,
-      name: 'Dewi Lestari',
-      role: 'Konselor Sebaya Binaan',
-      location: 'Cilegon',
-      program: 'Pendampingan Hukum',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&h=150&q=80',
-      featuredImage: 'https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&h=550&q=80',
-      story: 'Pendampingan hukum gratis dan sesi konseling psikososial yang disediakan yayasan menyelamatkan saya dari masa-masa tergelap setelah kasus KDRT. Mereka merangkul saya hingga pulih, mandiri secara finansial, dan melatih saya menjadi konselor sebaya.',
-      footnote: 'Pejuang Penyintas Mandiri'
+      story: (
+        <div className="not-italic text-left space-y-3 font-sans">
+          <h5 className="font-serif font-extrabold text-secondary dark:text-white text-base mb-1">
+            Program Pengurangan Risiko Bencana (PRB)
+          </h5>
+          <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed font-serif italic mb-2">
+            "Sebagai focal point perempuan di desa rawan bencana, saya aktif memimpin kesiapsiagaan komunitas, mengadvokasi kebutuhan vital, serta melindungi warga yang rentan."
+          </p>
+          <div className="space-y-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-primary block">
+              Pencapaian Utama
+            </span>
+            <ul className="text-xs text-zinc-650 dark:text-zinc-400 space-y-1 pl-4 list-disc font-serif not-italic">
+              <li>Advokasi ke DPRD Pandeglang untuk perbaikan infrastruktur jalan (terealisasi 700 meter).</li>
+              <li>Melaksanakan pelatihan & simulasi kebencanaan bagi keluarga dan tetangga.</li>
+              <li>Membentuk struktur siaga bencana lokal dan pembagian logistik darurat.</li>
+            </ul>
+          </div>
+          <div className="pt-1">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-primary block">
+              Dampak Positif
+            </span>
+            <p className="text-xs text-zinc-650 dark:text-zinc-400 leading-relaxed font-serif">
+              Meningkatkan ketangguhan komunitas, melindungi kelompok paling rentan (ibu hamil, lansia, anak-anak), dan menjadi figur focal point rujukan.
+            </p>
+          </div>
+        </div>
+      ),
+      footnote: 'Focal Point Tangguh'
     }
   ];
 
@@ -91,9 +135,13 @@ export default function Testimonials() {
           </div>
 
           {/* Story text in beautiful serif */}
-          <p className="text-secondary dark:text-zinc-200 text-sm sm:text-base leading-relaxed font-serif font-normal italic pr-2">
-            "{story.story}"
-          </p>
+          <div className="text-secondary dark:text-zinc-200 text-sm sm:text-base leading-relaxed font-serif font-normal pr-2">
+            {typeof story.story === 'string' ? (
+              <span className="italic">"{story.story}"</span>
+            ) : (
+              story.story
+            )}
+          </div>
         </div>
 
         {/* Profile info with warm layout */}
@@ -205,7 +253,7 @@ export default function Testimonials() {
         </div>
 
         {/* Desktop grid view (>=1024px) - stretches cards to equal heights */}
-        <div className="hidden lg:grid grid-cols-3 gap-8 items-stretch text-left">
+        <div className="hidden lg:grid grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch text-left">
           {stories.map((story, index) => (
             <div key={story.id} className="h-full">
               <StoryCard story={story} index={index} />

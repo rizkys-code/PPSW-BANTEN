@@ -41,7 +41,7 @@ export default function WorkRegions() {
       secretariat: 'Pendampingan Kelompok Basis di Kabupaten Tangerang',
       activities: [
         'Program Jalin Nusantara (Tiktok & R-BUMN Tigaraksa)',
-        'Desa Wisata Digital & Penguasaan TIK di Desa Cikasungka',
+        'Literasi Digital & Penguasaan TIK di Desa Cikasungka',
         'Penguatan Potensi Usaha Koperasi Perempuan Lintas Wilayah',
         'Edukasi E-commerce bagi Kelompok UMKM Basis'
       ]

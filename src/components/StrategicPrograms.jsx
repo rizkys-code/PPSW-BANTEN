@@ -7,7 +7,7 @@ export default function StrategicPrograms() {
   const strategicProgramsData = [
     {
       name: 'Program "Enhancing Digital Economy Participation for ASEAN Women MSMEs" (IDEAS)',
-      year: '2023 - 2025',
+      year: '01 April 2025 - 01 Mei 2026',
       partner: 'Kementerian Luar Negeri Republik Korea (ROK) & ASEAN-ROK Cooperation Fund (AKCF), bekerjasama dengan Asia Pacific Women’s Information Network Center (APWINC)',
       location: 'Provinsi Banten',
       summary: 'Program peningkatan keterampilan pemasaran digital, keamanan digital, dan literasi e-commerce bagi perempuan pengusaha mikro.',
@@ -15,7 +15,7 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program Keamanan Digital Untuk Pelaku Usaha',
-      year: '01 April 2025 - 01 Mei 2026',
+      year: 'Juni - Desember 2025',
       partner: 'Asosiasi PPSW (Pendanaan Internal)',
       location: 'Provinsi Banten (Kabupaten Pandeglang, Lebak, dan Serang)',
       summary: 'Edukasi dan pelatihan praktis mengenai perlindungan data pribadi, literasi digital kritis, keamanan akun media sosial, serta penanganan KBGO untuk pelaku usaha.',
@@ -23,7 +23,7 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program Akademi Paradigta Indonesia (API)',
-      year: 'Juni - Desember 2025',
+      year: 'September 2023 - Juli 2024',
       partner: 'Yayasan Raudhatunnisa Indonesia',
       location: 'Provinsi Banten (Kabupaten Pandeglang)',
       summary: 'Program pendidikan kepemimpinan, pengawasan anggaran daerah, dan pengorganisasian masyarakat bagi kader perempuan desa.',
@@ -31,23 +31,23 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program Jalin Nusantara (Upscalling Sme’s At Tourist Village & R-Bumn Tigaraksa)',
-      year: 'September 2023 - Juli 2024',
+      year: 'April - Desember 2024',
       partner: 'Tiktok (Program Asosiasi PPSW)',
       location: 'Desa Cikasungka, Kec. Solear, Kab. Tangerang – Banten',
       summary: 'Peningkatan kualitas hidup masyarakat terutama perempuan pelaku usaha di daerah wisata dengan penguasaan teknologi informasi dan komunikasi untuk pengembangan usaha mikro dan kecil.',
-      beneficiary: 'Tersedianya kerangka kerja usaha mikro, mendorong bisnis berkelanjutan di desa wisata, dan meningkatkan literasi digital komunitas.'
+      beneficiary: 'Tersedianya kerangka kerja usaha mikro, mendorong bisnis berkelanjutan, dan meningkatkan literasi digital komunitas.'
     },
     {
       name: 'Program Pendidikan Akademi Paradigta Pengembangan Kepemimpinan Perempuan Dalam Memimpin Gerakan Setiap Orang Menjadi Pembaharu (Everyone A Changemaker)',
-      year: 'April - Desember 2024',
+      year: '31 Mei 2023 - Januari 2024',
       partner: 'Yayasan Raudhatunnisa Indonesia (Program lintas wilayah Asosiasi PPSW)',
-      location: 'Kabupaten Lebak (Banten) & Kabupaten Sukabumi (Jawa Barat)',
+      location: 'Kabupaten Lebak (Banten)',
       summary: 'Program pendidikan khusus untuk mengembangkan kepemimpinan perempuan dalam memimpin gerakan agar setiap orang menjadi pembaharu (Everyone A Changemaker).',
-      beneficiary: 'Melahirkan kader pemimpin perempuan di tingkat desa untuk memimpin gerakan perubahan sosial.'
+      beneficiary: 'Melahirkan 90 kader pemimpin perempuan di tingkat desa untuk memimpin gerakan perubahan sosial.'
     },
     {
       name: 'Program Go Digital Asean Tahap Ke 2 (Grow Digital Asean)',
-      year: '31 Mei 2023 - Januari 2024',
+      year: 'Oktober 2020 - November 2023',
       partner: 'Google.org melalui The Asia Foundation (Program lintas wilayah Asosiasi PPSW)',
       location: 'Provinsi Banten',
       summary: 'Edukasi kesiapan kerja digital, optimasi media sosial bisnis, dan literasi keuangan untuk pemuda desa, calon pelaku usaha, maupun pelaku usaha yang ingin bertransformasi menjadi digital.',
@@ -55,7 +55,7 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program Madani – Civil Society Support Initiative',
-      year: 'Oktober 2020 - November 2023',
+      year: '16 Januari 2023 - 31 Mei 2023',
       partner: 'USAID - FHI360',
       location: 'Kabupaten Lebak – Banten',
       summary: 'Meningkatkan peran serta masyarakat sipil dalam pembangunan untuk menciptakan pemerintahan yang kolaboratif (collaborative governance).',
@@ -63,7 +63,7 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program Pertemuan Laki-Laki Untuk Mendukung Kepemimpinan Perempuan Dalam Perlindungan Berbasis Komunitas',
-      year: '16 Januari 2023 - 31 Mei 2023',
+      year: 'Mei 2022 - Juni 2023',
       partner: 'Yappika ActionAid (YAA)',
       location: 'Kabupaten Pandeglang dan Kabupaten Serang – Banten',
       summary: 'Meningkatkan pemahaman tokoh laki-laki (agama, masyarakat, adat) tentang nilai-nilai kesetaraan gender untuk mendukung kepemimpinan perempuan.',
@@ -71,7 +71,7 @@ export default function StrategicPrograms() {
     },
     {
       name: 'Program ‘Women-Led Community Based Protection In Banten’',
-      year: 'Mei 2022 - Juni 2023',
+      year: '2023 - 2025',
       partner: 'Yappika ActionAid',
       location: 'Kabupaten Pandeglang dan Kabupaten Serang, Provinsi Banten',
       summary: 'Inisiasi dan pelatihan tim tanggap perlindungan berbasis komunitas yang dipimpin langsung oleh tokoh perempuan di tingkat basis.',

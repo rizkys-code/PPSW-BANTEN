@@ -73,8 +73,8 @@ export default function Advocacy() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {[
-                  'Kebijakan & Regulasi: Mendukung lahirnya PERDES responsif gender, program Madani untuk tata kelola kolaboratif',
-                  'Sosial & Komunitas: Organisir kelompok perempuan dengan pintu masuk ekonomi, libatkan tokoh laki-laki',
+                  'Kebijakan & Regulasi: Mendukung lahirnya PERDES responsif gender, dan program Madani untuk tata kelola kolaboratif',
+                  'Sosial & Komunitas: Organisir kelompok perempuan dengan pintu masuk ekonomi, melibatkan tokoh laki-laki',
                   'Digital & Ekonomi: Akses digital setara via IDEAS, Go Digital ASEAN, dan Keamanan Digital',
                   'Kepemimpinan Perempuan: Akademi Paradigta Indonesia dengan semangat Everyone A Changemaker'
                 ].map((item, idx) => (
