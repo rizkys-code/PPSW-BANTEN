@@ -12,6 +12,7 @@ function AnimatedCounter({ end, decimals = 0, suffix = "", duration = 1500 }) {
     if (!isInView) return;
     
     let startTime = null;
+    let animationFrameId = null;
     
     const animate = (timestamp) => {
       if (!startTime) startTime = timestamp;
@@ -24,11 +25,17 @@ function AnimatedCounter({ end, decimals = 0, suffix = "", duration = 1500 }) {
       setCount(easeProgress * end);
 
       if (progress < 1) {
-        requestAnimationFrame(animate);
+        animationFrameId = requestAnimationFrame(animate);
       }
     };
     
-    requestAnimationFrame(animate);
+    animationFrameId = requestAnimationFrame(animate);
+    
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, [isInView, end, duration]);
 
   const formattedCount = count.toLocaleString('id-ID', {

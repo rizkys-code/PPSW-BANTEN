@@ -174,3 +174,73 @@ html:not(.dark) .premium-card-hover:hover {
     0 8px 18px rgba(15, 23, 42, 0.08) !important;
 }
 
+/* -------------------------------------------------------------
+   GPU rendering optimizations & mobile stability enhancements
+   ------------------------------------------------------------- */
+
+/* GPU Layer Promotion & Hardware Acceleration for heavy UI components */
+.premium-card,
+.premium-card-hover,
+.glass-card,
+.glass-nav {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Optimize heavy CSS blur filters on all screens to use GPU-friendly radial gradients instead */
+.blur-\[120px\] {
+  filter: none !important;
+  -webkit-filter: none !important;
+  border-radius: 9999px;
+}
+.bg-secondary\/5.blur-\[120px\] {
+  background: radial-gradient(circle, rgba(74, 46, 22, 0.08) 0%, rgba(74, 46, 22, 0) 70%) !important;
+}
+.dark .bg-secondary\/5.blur-\[120px\] {
+  background: radial-gradient(circle, rgba(110, 70, 36, 0.06) 0%, rgba(110, 70, 36, 0) 70%) !important;
+}
+.bg-primary\/5.blur-\[120px\] {
+  background: radial-gradient(circle, rgba(245, 138, 7, 0.08) 0%, rgba(245, 138, 7, 0) 70%) !important;
+}
+.dark .bg-primary\/5.blur-\[120px\] {
+  background: radial-gradient(circle, rgba(255, 179, 71, 0.06) 0%, rgba(255, 179, 71, 0) 70%) !important;
+}
+
+/* Optimize blur-3xl classes (used in VolunteerCTA) */
+.blur-3xl {
+  filter: none !important;
+  -webkit-filter: none !important;
+  border-radius: 9999px;
+}
+.bg-accent\/15.blur-3xl {
+  background: radial-gradient(circle, rgba(255, 179, 71, 0.16) 0%, rgba(255, 179, 71, 0) 70%) !important;
+}
+.bg-primary\/10.blur-3xl {
+  background: radial-gradient(circle, rgba(245, 138, 7, 0.12) 0%, rgba(245, 138, 7, 0) 70%) !important;
+}
+
+/* Disable backdrop filters on mobile to prevent GPU memory leaks, repaint cycles, and crashes */
+@media (max-width: 767px) {
+  *, *::before, *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  
+  /* Increase background opacity when backdrop blur is disabled for perfect readability */
+  .glass-nav {
+    background-color: rgba(255, 253, 249, 0.97) !important;
+  }
+  .dark .glass-nav {
+    background-color: rgba(26, 17, 11, 0.97) !important;
+  }
+  .glass-card {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+  .dark .glass-card {
+    background-color: rgba(47, 32, 21, 0.95) !important;
+  }
+}
+
+
