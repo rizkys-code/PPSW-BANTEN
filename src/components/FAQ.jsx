@@ -13,22 +13,12 @@ export default function FAQ() {
     {
       value: 'item-2',
       question: 'Apakah program pelatihan di PPSW BANTEN dipungut biaya?',
-      answer: 'Tidak sama sekali. Seluruh program pelatihan (kelas coding, mentoring bisnis UMKM, pos gizi kesehatan) serta layanan pendampingan hukum disediakan gratis 100% bagi perempuan penerima manfaat, didanai oleh donatur individu dan kemitraan CSR.'
+      answer: 'Tidak sama sekali. Seluruh program pelatihan (kelas coding, mentoring bisnis UMKM, pos gizi kesehatan) disediakan gratis 100% bagi perempuan penerima manfaat, didanai oleh donatur individu dan kemitraan CSR.'
     },
     {
       value: 'item-3',
       question: 'Bagaimana penyaluran dana donasi dijamin transparansinya?',
       answer: 'Setiap rupiah dialokasikan secara akuntabel. Kami mempublikasikan laporan penyaluran donasi bulanan di website kami dan mengirimkan salinan laporan tersebut melalui email para donatur. Selain itu, laporan keuangan tahunan kami diaudit oleh Kantor Akuntan Publik (KAP) independen.'
-    },
-    {
-      value: 'item-4',
-      question: 'Siapa saja yang berhak mendaftar sebagai penerima beasiswa kuliah?',
-      answer: 'Beasiswa kami diperuntukkan bagi remaja putri lulusan SMA/SMK/sederajat berprestasi yang berasal dari keluarga prasejahtera di 18 kabupaten/kota wilayah kerja aktif kami. Proses pendaftaran dibuka setiap tahun ajaran baru.'
-    },
-    {
-      value: 'item-5',
-      question: 'Bagaimana jika saya memerlukan pendampingan hukum darurat?',
-      answer: 'Jika Anda atau kerabat terdekat mengalami KDRT atau pelecehan, silakan langsung menghubungi hotline 24/7 kami via tombol WhatsApp di bagian kontak di bawah. Tim paralegal dan psikolog pendamping kami akan segera merespons secara rahasia dan aman.'
     }
   ];
 
@@ -52,7 +42,7 @@ export default function FAQ() {
               Questions
             </span>
           </h2>
-          <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal text-sm sm:text-base leading-relaxed">
+          <p className="mt-4 text-zinc-655 dark:text-zinc-400 font-normal text-sm sm:text-base leading-relaxed text-justify">
             Berikut adalah jawaban atas beberapa pertanyaan yang paling sering diajukan mengenai program dan operasional gerakan kami.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
@@ -79,7 +69,7 @@ export default function FAQ() {
                 </Accordion.Header>
 
                 <Accordion.Content className="overflow-hidden data-[state=open]:animate-[slideDown_300ms_cubic-bezier(0.87,_0,_0.13,_1)] data-[state=closed]:animate-[slideUp_300ms_cubic-bezier(0.87,_0,_0.13,_1)]">
-                  <div className="px-6 pb-6 pt-1 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal border-t border-zinc-100 dark:border-zinc-800/40 mt-1 pt-4">
+                  <div className="px-6 pb-6 pt-1 text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal border-t border-zinc-100 dark:border-zinc-800/40 mt-1 pt-4 text-justify">
                     {faq.answer}
                   </div>
                 </Accordion.Content>

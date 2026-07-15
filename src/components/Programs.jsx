@@ -23,7 +23,7 @@ export default function Programs() {
         'Monitoring & Evaluasi',
         'Penguatan ekonomi sebagai pintu masuk'
       ],
-      metric: 'Pendampingan aktif kelompok perempuan akar rumput'
+      metric: 'Pemberdayaan aktif kelompok perempuan akar rumput'
     },
     {
       id: 'koperasi',
@@ -45,8 +45,8 @@ export default function Programs() {
       title: 'Pendidikan & Penguatan Kapasitas',
       icon: GraduationCap,
       gradient: 'from-primary to-primary-dark',
-      description: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, dan pendampingan untuk membangun kekuatan kolektif.',
-      detailedInfo: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, melakukan advokasi untuk membangun kekuatan kolektif dan pendampingan.',
+      description: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, dan advokasi untuk membangun kekuatan kolektif.',
+      detailedInfo: 'Menyelenggarakan pelatihan kepemimpinan, gender, literasi digital, literasi keuangan, pendidikan politik, kewirausahaan, pemetaan kerentanan dan risiko keamanan tanggap bencana, kesehatan reproduksi, serta melakukan advokasi untuk membangun kekuatan kolektif.',
       outcomes: [
         'Pelatihan Kepemimpinan',
         'Pelatihan Gender',
@@ -56,7 +56,7 @@ export default function Programs() {
         'Kewirausahaan',
         'Pemetaan Kerentanan dan Risiko Keamanan Tanggap Bencana',
         'Kesehatan Reproduksi',
-        'Pendampingan'
+        'Advokasi'
       ],
       metric: 'Pelatihan terpadu peningkatan kapasitas masyarakat basis'
     },
@@ -154,7 +154,7 @@ export default function Programs() {
             Program Utama
           </h2>
           <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Fokus pelayanan dan pendampingan kami dirancang secara terpadu untuk mendorong lahirnya kemandirian sosial dan ekonomi perempuan secara berkelanjutan.
+            Fokus pelayanan dan pemberdayaan kami dirancang secara terpadu untuk mendorong lahirnya kemandirian sosial dan ekonomi perempuan secara berkelanjutan.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>
@@ -228,7 +228,7 @@ export default function Programs() {
                 </div>
 
                 {/* Description */}
-                <p className="text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal mb-8 text-xs sm:text-base">
+                <p className="text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal mb-8 text-xs sm:text-base text-justify">
                   {selectedProgram.detailedInfo}
                 </p>
 

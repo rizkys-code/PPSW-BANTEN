@@ -3,13 +3,17 @@ import { Image as ImageIcon, X, ZoomIn, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Leaf1, LeafBranch, Flower, WatercolorBlob } from './Decorations';
 
+import cardImg1 from '../assets/image/simulasi-tanggap-bencana-di-kec-sumur_431[1].jpg';
+import cardImg2 from '../assets/image/sesi-diskusi-kelompok.jpg';
+import cardImg3 from '../assets/image/mengikuti-kegiatan-festival-ormas-kab-lebak-banten.jpg';
+
 export default function Gallery() {
   const [activeItem, setActiveItem] = useState(null);
 
   const galleryItems = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=800&q=80',
+      src: cardImg1,
       title: 'Solidaritas Keseharian Relawan',
       category: 'Keseharian',
       desc: 'Gotong royong para relawan PPSW BANTEN mempersiapkan posko pelayanan sosial masyarakat terpadu.',
@@ -17,15 +21,15 @@ export default function Gallery() {
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80',
+      src: cardImg2,
       title: 'Mentoring Kolaboratif Usaha',
       category: 'Pelatihan UMKM',
-      desc: 'Pendampingan usaha mikro mulai dari branding kemasan, perizinan PIRT/NIB, hingga manajemen keuangan rumah tangga.',
+      desc: 'Pemberdayaan usaha mikro mulai dari branding kemasan, perizinan PIRT/NIB, hingga manajemen keuangan rumah tangga.',
       date: '15 Mei 2026'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=800&q=80',
+      src: cardImg3,
       title: 'Bazaar UMKM Perempuan Kreatif',
       category: 'Pelatihan UMKM',
       desc: 'Festival produk lokal menampilkan hasil kerajinan tangan rajut, fesyen ecoprint, dan aneka kuliner olahan binaan.',
@@ -66,13 +70,13 @@ export default function Gallery() {
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>
 
-        {/* Responsive Grid Masonry-style spacing (1 col mobile, 2 cols tablet, 3-4 cols desktop) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 items-stretch">
+        {/* Responsive Flexbox Layout - centers cards and balances composition on all screen sizes */}
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 max-w-6xl mx-auto items-stretch">
           {galleryItems.map((item) => (
             <div
               key={item.id}
               onClick={() => setActiveItem(item)}
-              className="group rounded-3xl bg-warm-tint/50 dark:bg-zinc-900 border border-secondary/10 dark:border-white/5 p-4 shadow-md hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex flex-col cursor-pointer text-left h-full premium-card premium-card-hover"
+              className="group rounded-3xl bg-warm-tint/50 dark:bg-zinc-900 border border-secondary/10 dark:border-white/5 p-4 shadow-md hover:shadow-xl hover:scale-[1.01] active:scale-[0.99] transition-all duration-300 flex flex-col cursor-pointer text-left premium-card premium-card-hover w-full sm:w-[calc(50%-16px)] lg:flex-1 max-w-[380px] lg:max-w-none"
             >
               {/* Polaroid-style photo container - locks aspect ratio to 4:3, prevents stretched images */}
               <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-zinc-200 dark:bg-zinc-800 shadow-inner">
@@ -104,7 +108,7 @@ export default function Gallery() {
                   <h3 className="font-serif font-extrabold text-base sm:text-lg text-secondary dark:text-white leading-tight group-hover:text-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm text-zinc-655 dark:text-zinc-400 font-normal leading-relaxed">
+                  <p className="text-xs sm:text-sm text-zinc-655 dark:text-zinc-400 font-normal leading-relaxed text-justify">
                     {item.desc}
                   </p>
                 </div>
@@ -174,7 +178,7 @@ export default function Gallery() {
                   <h3 className="text-secondary dark:text-white font-serif font-extrabold text-xl sm:text-2xl leading-tight">
                     {activeItem.title}
                   </h3>
-                  <p className="text-zinc-600 dark:text-zinc-350 text-sm sm:text-base leading-relaxed font-normal">
+                  <p className="text-zinc-600 dark:text-zinc-350 text-sm sm:text-base leading-relaxed font-normal text-justify">
                     {activeItem.desc}
                   </p>
                 </div>

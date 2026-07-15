@@ -72,9 +72,7 @@ export default function Footer() {
   const programLinks = [
     { name: 'Pendidikan Literasi', href: '#program' },
     { name: 'Pelatihan UMKM', href: '#program' },
-    { name: 'Kesehatan Keluarga', href: '#program' },
-    { name: 'Pendampingan Hukum', href: '#program' },
-    { name: 'Beasiswa Kuliah', href: '#program' }
+    { name: 'Kesehatan Keluarga', href: '#program' }
   ];
 
   const socialLinks = [
@@ -132,8 +130,8 @@ export default function Footer() {
               </span>
             </a>
             
-            <p className="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed font-normal max-w-sm">
-              Yayasan nirlaba pemberdayaan perempuan Indonesia yang berfokus pada kemandirian ekonomi, kecakapan teknologi, bantuan beasiswa, dan pendampingan hukum.
+            <p className="text-zinc-500 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed font-normal max-w-sm text-justify">
+              Yayasan nirlaba pemberdayaan perempuan Indonesia yang berfokus pada kemandirian ekonomi dan kecakapan teknologi.
             </p>
 
             {/* Social icons */}

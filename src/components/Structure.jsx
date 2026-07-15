@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { WatercolorBlob } from './Decorations';
-import structureImg from '../assets/image/struktur_organisasi.jpg';
+import structureImg from '../assets/image/struktur-new.jpeg';
 
 export default function Structure() {
   return (
@@ -34,10 +34,10 @@ export default function Structure() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-[900px] mx-auto rounded-3xl bg-bg-light dark:bg-zinc-900 border border-secondary/10 dark:border-white/10 p-4 sm:p-6 shadow-xl overflow-hidden premium-card"
+          className="max-w-5xl mx-auto rounded-3xl bg-bg-light dark:bg-zinc-900 border border-secondary/10 dark:border-white/10 p-2 sm:p-3 shadow-xl overflow-hidden premium-card"
         >
           {/* Responsive Image Container */}
-          <div className="w-full rounded-2xl overflow-hidden">
+          <div className="w-full rounded-2xl overflow-hidden bg-white border border-zinc-200/80 dark:border-zinc-800/50 shadow-md p-4 sm:p-8 flex justify-center items-center">
             <img
               src={structureImg}
               alt="Struktur Organisasi PPSW Banten"

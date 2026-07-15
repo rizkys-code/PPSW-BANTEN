@@ -36,7 +36,7 @@ export default function Donation() {
             </span>
           </h2>
           <p className="mt-4 text-zinc-655 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Setiap donasi Anda akan dikonversi langsung menjadi modal Untuk Pendampingan pelaku UMKM Perempuan Mengembangkan modul pelatihan untuk peningkatan kapasitas Perempuan pedesaan.
+            Setiap donasi Anda akan dikonversi langsung menjadi modal pemberdayaan pelaku UMKM Perempuan serta pengembangan modul pelatihan untuk peningkatan kapasitas Perempuan pedesaan.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>

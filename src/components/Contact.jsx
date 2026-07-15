@@ -79,7 +79,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Punya pertanyaan mengenai program pendampingan kami, donasi bersama, atau kemitraan relawan? Silakan hubungi kami via WhatsApp atau formulir di bawah.
+            Punya pertanyaan mengenai program kami, donasi bersama, atau kemitraan relawan? Silakan hubungi kami via WhatsApp atau formulir di bawah.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>

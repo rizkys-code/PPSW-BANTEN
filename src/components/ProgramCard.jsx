@@ -35,7 +35,7 @@ export default function ProgramCard({ program, onOpenDetails }) {
         </h3>
 
         {/* Short Description */}
-        <p className="mt-3.5 text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal">
+        <p className="mt-3.5 text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal text-justify">
           {program.description}
         </p>
       </div>

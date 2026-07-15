@@ -82,7 +82,7 @@ export default function About() {
     },
     {
       title: '2021',
-      desc: 'Strategi desentralisasi diperkuat dengan pembentukan wilayah otonom baru yaitu PPSW Sumatera menjadi PPSW Aceh dan PPSW Riau sedangkan PPSW Pasoendan menjadi PPSW Pasoendan Digdaya, agar pelayanan dan pendampingan lebih dekat dengan masyarakat.',
+      desc: 'Strategi desentralisasi diperkuat dengan pembentukan wilayah otonom baru yaitu PPSW Sumatera menjadi PPSW Aceh dan PPSW Riau sedangkan PPSW Pasoendan menjadi PPSW Pasoendan Digdaya, agar pelayanan dan pemberdayaan lebih dekat dengan masyarakat.',
     },
     {
       title: '2026',
@@ -195,10 +195,10 @@ export default function About() {
 
             {/* Profile Content */}
             <div className="pt-4 space-y-4 text-xs sm:text-sm md:text-base">
-              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed text-justify">
                 PPSW Banten adalah NGO perempuan yang berpihak pada hak-hak dan kepentingan perempuan untuk mewujudkan keadilan, kesejahteraan, dan kesetaraan. Sejak berdiri, PPSW Banten secara konsisten mendampingi kelompok perempuan di tingkat basis, memperkuat kapasitas kepemimpinan perempuan, serta membangun solidaritas untuk menciptakan perubahan sosial yang berkelanjutan.
               </p>
-              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal">
+              <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal text-justify">
                 Kami percaya bahwa setiap perempuan memiliki potensi untuk menjadi agen perubahan. Dengan memperkuat organisasi perempuan di basis, memperluas akses terhadap pendidikan, ekonomi, sosial, advokasi, dan ruang partisipasi publik, PPSW Banten terus mendorong lahirnya gerakan masyarakat yang lebih adil, inklusif, dan setara.
               </p>
             </div>
@@ -239,7 +239,7 @@ export default function About() {
                     <h4 className="font-serif font-extrabold text-base sm:text-lg text-secondary dark:text-white">
                       {val.title}
                     </h4>
-                    <div className="mt-1 text-xs sm:text-sm text-zinc-655 dark:text-zinc-400 leading-relaxed font-normal">
+                    <div className="mt-1 text-xs sm:text-sm text-zinc-655 dark:text-zinc-400 leading-relaxed font-normal text-justify">
                       {val.desc}
                     </div>
                   </div>
@@ -299,7 +299,7 @@ export default function About() {
               Capaian & Dampak
             </span>
             <h3 className="text-2xl sm:text-4xl font-serif font-extrabold text-secondary dark:text-white">
-              Capaian Dampak Pendampingan
+              Capaian Dampak Pemberdayaan
             </h3>
             <div className="h-0.5 w-16 bg-primary/30 mx-auto mt-4" />
           </div>
@@ -309,7 +309,7 @@ export default function About() {
             {[
               {
                 title: 'Cakupan Wilayah',
-                desc: 'Pendampingan aktif PPSW Banten tersebar di berbagai wilayah kerja Provinsi Banten.',
+                desc: 'Pemberdayaan aktif PPSW Banten tersebar di berbagai wilayah kerja Provinsi Banten.',
                 stats: [
                   { label: 'Kabupaten', value: '4', note: 'Pandeglang, Lebak, Serang, Tangerang' },
                   { label: 'Kecamatan', value: '13', note: 'Kecamatan aktif dampingan' },
@@ -347,7 +347,7 @@ export default function About() {
                   <span className="font-serif font-extrabold text-xl sm:text-2xl text-secondary dark:text-white mb-1.5 block leading-tight">
                     {event.title}
                   </span>
-                  <p className="text-xs sm:text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal mb-3">
+                  <p className="text-xs sm:text-sm text-zinc-650 dark:text-zinc-400 leading-relaxed font-normal mb-3 text-justify">
                     {event.desc}
                   </p>
                   

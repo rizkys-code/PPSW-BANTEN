@@ -144,7 +144,7 @@ export default function StrategicPrograms() {
                 <h3 className="font-serif font-extrabold text-lg sm:text-xl text-secondary dark:text-white leading-snug group-hover:text-primary dark:group-hover:text-accent-light transition-colors duration-250 mb-3">
                   {prog.name}
                 </h3>
-                <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 font-normal">
+                <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed mb-4 font-normal text-justify">
                   {prog.summary}
                 </p>
               </div>
@@ -165,7 +165,7 @@ export default function StrategicPrograms() {
                   <Handshake className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <div>
                     <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Mitra Pendukung / Pendanaan:</span>
-                    <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed">{prog.partner}</span>
+                    <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed text-justify block">{prog.partner}</span>
                   </div>
                 </div>
 
@@ -175,7 +175,7 @@ export default function StrategicPrograms() {
                     <Users className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                     <div>
                       <span className="font-extrabold text-secondary dark:text-white block mb-0.5">Penerima Manfaat / Capaian:</span>
-                      <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed">{prog.beneficiary}</span>
+                      <span className="text-zinc-650 dark:text-zinc-400 font-normal leading-relaxed text-justify block">{prog.beneficiary}</span>
                     </div>
                   </div>
                 )}

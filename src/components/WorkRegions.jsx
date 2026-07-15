@@ -18,17 +18,17 @@ export default function WorkRegions() {
     },
     {
       name: 'Lebak',
-      secretariat: 'Pendampingan Kelompok Basis di Kabupaten Lebak',
+      secretariat: 'Pemberdayaan Kelompok Basis di Kabupaten Lebak',
       activities: [
         'Program Kepemimpinan Perempuan (Everyone A Changemaker)',
         'Program MADANI - Civil Society Support (USAID-FHI360)',
         'Program Perluasan Kesempatan Ekonomi Terpadu',
-        'Pendampingan Koperasi Perempuan di Akar Rumput'
+        'Pemberdayaan Koperasi Perempuan di Akar Rumput'
       ]
     },
     {
       name: 'Serang',
-      secretariat: 'Pendampingan Kelompok Basis di Kabupaten Serang',
+      secretariat: 'Pemberdayaan Kelompok Basis di Kabupaten Serang',
       activities: [
         'Program Keamanan Digital & Literasi Digital Kritis',
         'Women-Led Community Based Protection (Yappika ActionAid)',
@@ -38,7 +38,7 @@ export default function WorkRegions() {
     },
     {
       name: 'Tangerang',
-      secretariat: 'Pendampingan Kelompok Basis di Kabupaten Tangerang',
+      secretariat: 'Pemberdayaan Kelompok Basis di Kabupaten Tangerang',
       activities: [
         'Program Jalin Nusantara (Tiktok & R-BUMN Tigaraksa)',
         'Literasi Digital & Penguasaan TIK di Desa Cikasungka',
@@ -71,7 +71,7 @@ export default function WorkRegions() {
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary/10 text-secondary dark:bg-secondary/20 dark:text-accent text-xs font-bold uppercase tracking-wider mb-4 border border-secondary/20"
           >
             <Sparkles className="w-3.5 h-3.5 text-secondary fill-secondary/20" />
-            Cakupan Pendampingan
+            Cakupan Wilayah Kerja
           </motion.div>
           
           <motion.h2
@@ -87,7 +87,7 @@ export default function WorkRegions() {
             </span>
           </motion.h2>
           <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Mendampingi kelompok perempuan di 4 kabupaten Provinsi Banten guna membangun solidaritas, kepemimpinan, dan kemandirian ekonomi.
+            Membina kelompok perempuan di 4 kabupaten Provinsi Banten guna membangun solidaritas, kepemimpinan, dan kemandirian ekonomi.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>
@@ -106,7 +106,7 @@ export default function WorkRegions() {
             <div className="p-4 rounded-3xl bg-white dark:bg-zinc-900 border border-secondary/10 dark:border-white/5 shadow-xl relative overflow-hidden premium-card h-full flex flex-col justify-center">
               <span className="font-serif font-extrabold text-lg text-secondary dark:text-white mb-4 block text-left flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-primary" />
-                Peta Operasional Wilayah Dampingan
+                Peta Operasional Wilayah Kerja
               </span>
               
               <div className="relative w-full rounded-2xl overflow-hidden bg-zinc-50 dark:bg-zinc-950 flex items-center justify-center border border-zinc-100 dark:border-zinc-800">
@@ -118,7 +118,7 @@ export default function WorkRegions() {
                 />
               </div>
               <p className="text-[10px] sm:text-xs text-zinc-500 dark:text-zinc-400 text-left mt-3.5 leading-relaxed">
-                *Peta pendampingan wilayah Banten mencakup kawasan pesisir, sentra UMKM pariwisata, hingga pedesaan di 4 Kabupaten utama.
+                *Peta wilayah kerja Banten mencakup kawasan pesisir, sentra UMKM pariwisata, hingga pedesaan di 4 Kabupaten utama.
               </p>
             </div>
           </motion.div>
