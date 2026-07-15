@@ -128,7 +128,7 @@ export default function Contact() {
               </p>
               
               <a
-                href="https://wa.me/6281388451993?text=Halo%20PPSW%20Banten%2C%20saya%20tertarik%20dengan%20program%20yayasan"
+                href="https://wa.me/6281388451993?text=Halo%20PPSW%20BANTEN%2C%20saya%20tertarik%20dengan%20Program%20PPSW%20BANTEN"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold rounded-xl shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer w-full sm:w-auto"

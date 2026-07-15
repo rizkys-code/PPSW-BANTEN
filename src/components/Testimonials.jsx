@@ -3,6 +3,7 @@ import { Quote, Heart, Sparkles, ChevronLeft, ChevronRight } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { Leaf1, LeafBranch, Flower, BlobBackdrop, WatercolorBlob } from './Decorations';
 import ceritaSukses1 from '../assets/image/ceritaSukses1.jpeg';
+import adeTestimoniImg from '../assets/image/ade-testimoni.jpeg';
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -14,7 +15,7 @@ export default function Testimonials() {
       role: 'Ketua KWPS Tulip Harum',
       location: 'Saketi, Pandeglang',
       program: 'Akademi Paradigta',
-      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80',
+      avatar: adeTestimoniImg,
       featuredImage: ceritaSukses1,
       story: (
         <div className="not-italic text-left space-y-3 font-sans">
