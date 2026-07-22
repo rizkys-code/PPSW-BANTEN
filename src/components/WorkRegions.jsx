@@ -87,7 +87,7 @@ export default function WorkRegions() {
             </span>
           </motion.h2>
           <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
-            Membina kelompok perempuan di 4 kabupaten Provinsi Banten guna membangun solidaritas, kepemimpinan, dan kemandirian ekonomi.
+            Mendampingi kelompok perempuan di 4 kabupaten Provinsi Banten guna membangun solidaritas, kepemimpinan, dan kemandirian ekonomi.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>

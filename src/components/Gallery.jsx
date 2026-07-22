@@ -32,7 +32,7 @@ export default function Gallery() {
       src: cardImg3,
       title: 'Bazaar UMKM Perempuan Kreatif',
       category: 'Pelatihan UMKM',
-      desc: 'Festival produk lokal menampilkan hasil kerajinan tangan rajut, fesyen ecoprint, dan aneka kuliner olahan binaan.',
+      desc: 'Festival produk lokal menampilkan hasil kerajinan tangan rajut, fesyen ecoprint, dan aneka kuliner olahan dampingan.',
       date: '02 Mei 2026'
     }
   ];

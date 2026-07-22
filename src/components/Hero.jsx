@@ -191,7 +191,7 @@ export default function Hero() {
                   </div>
                 </motion.div>
 
-                {/* Floating Card 3: Desa Binaan */}
+                {/* Floating Card 3: Desa Dampingan */}
                 <motion.div 
                   initial={{ x: 20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}

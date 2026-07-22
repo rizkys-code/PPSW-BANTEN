@@ -83,7 +83,7 @@ export default function StrategicPrograms() {
       partner: 'The Asia Foundation & Google (Program lintas wilayah Asosiasi PPSW)',
       location: 'Kabupaten Pandeglang dan Kabupaten Lebak, Provinsi Banten',
       summary: 'Peningkatan taraf hidup masyarakat marginal melalui perluasan kesempatan berusaha dan bekerja dengan pemanfaatan teknologi informasi dan komunikasi.',
-      beneficiary: 'Perluasan kesempatan bekerja/berusaha bagi koperasi binaan, pelaku usaha mikro, dan masyarakat marginal.'
+      beneficiary: 'Perluasan kesempatan bekerja/berusaha bagi koperasi dampingan, pelaku usaha mikro, dan masyarakat marginal.'
     }
   ];
 

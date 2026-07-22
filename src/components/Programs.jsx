@@ -38,7 +38,7 @@ export default function Programs() {
         'Penguatan Ekonomi',
         'Kemandirian Usaha'
       ],
-      metric: 'Pembentukan dan pembinaan koperasi perempuan mandiri'
+      metric: 'Pembentukan dan pendampingan koperasi perempuan mandiri'
     },
     {
       id: 'pelatihan',
@@ -110,7 +110,7 @@ export default function Programs() {
       icon: Video,
       gradient: 'from-amber-500 to-primary',
       description: 'Menyajikan dokumentasi audio-visual tentang kisah sukses pemberdayaan masyarakat melalui penguatan ekonomi perempuan.',
-      detailedInfo: 'Kami memproduksi video dokumentasi untuk menyuarakan aspirasi perempuan basis secara visual dan menyebarluaskan cerita perubahan sosial digital koperasi binaan kami.',
+      detailedInfo: 'Kami memproduksi video dokumentasi untuk menyuarakan aspirasi perempuan basis secara visual dan menyebarluaskan cerita perubahan sosial digital koperasi dampingan kami.',
       outcomes: [
         'Ada Lentera Diantara Kita'
       ],

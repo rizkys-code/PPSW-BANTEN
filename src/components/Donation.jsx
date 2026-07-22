@@ -1,9 +1,18 @@
-import React from 'react';
-import { Heart, Info, ShieldCheck } from 'lucide-react';
+import React, { useState } from 'react';
+import { Heart, Building2, Copy, Check, ShieldCheck, CreditCard } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Leaf1, LeafBranch, Flower, BlobBackdrop, WatercolorBlob } from './Decorations';
 
 export default function Donation() {
+  const [copied, setCopied] = useState(false);
+  const accountNumber = '2094114481';
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(accountNumber);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
     <section id="donasi" className="py-20 sm:py-24 relative bg-white dark:bg-zinc-950 overflow-hidden">
       {/* Decorative floral twig drawings in corners */}
@@ -35,37 +44,98 @@ export default function Donation() {
               Terbaik Anda
             </span>
           </h2>
-          <p className="mt-4 text-zinc-655 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
+          <p className="mt-4 text-zinc-650 dark:text-zinc-400 font-normal max-w-xl mx-auto text-xs sm:text-base leading-relaxed">
             Setiap donasi Anda akan dikonversi langsung menjadi modal pemberdayaan pelaku UMKM Perempuan serta pengembangan modul pelatihan untuk peningkatan kapasitas Perempuan pedesaan.
           </p>
           <div className="h-1 w-20 bg-gradient-to-r from-primary to-accent mx-auto mt-6 rounded-full" />
         </div>
 
-        {/* Combined warm rounded card containing both forms */}
+        {/* Combined warm rounded card containing bank details */}
         <div className="rounded-[40px] bg-warm-tint/60 dark:bg-zinc-900/60 p-5 sm:p-10 lg:p-14 border border-secondary/10 dark:border-white/5 shadow-xl relative overflow-hidden premium-card">
           <BlobBackdrop className="w-[110%] h-[110%] -top-12 -left-12 opacity-30" seed={1} />
           <WatercolorBlob className="w-[500px] h-[500px] top-1/4 left-1/3 opacity-30" seed={3} />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch relative z-10">
             
-            {/* Left Column: Status Card (Centered and restricted on Mobile/Tablet to prevent layout stretch) */}
+            {/* Left Column: Bank Account Card */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-100px' }}
               className="lg:col-span-7 flex flex-col mx-auto w-full text-left"
             >
-              <div className="flex-grow rounded-[32px] p-6 sm:p-8 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-secondary/10 dark:border-white/5 flex flex-col justify-center items-start shadow-lg relative overflow-hidden h-full premium-card premium-card-hover">
-                <span className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold mb-4 border border-primary/15 self-start">
-                  <Info className="w-3.5 h-3.5" />
-                  Status Rekening Donasi
-                </span>
-                <h3 className="font-serif font-extrabold text-xl sm:text-2xl text-secondary dark:text-white mb-3">
-                  Rekening Donasi Sedang Dalam Proses
-                </h3>
-                <p className="text-zinc-650 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed font-normal">
-                  Informasi mengenai rekening bank dan QRIS donasi resmi PPSW Banten saat ini sedang dalam proses administrasi pembentukan resmi. Bagian ini akan segera diperbarui dengan nomor rekening resmi dan kode QRIS setelah proses selesai. Terima kasih atas dukungan dan pengertian Anda.
-                </p>
+              <div className="flex-grow rounded-[32px] p-6 sm:p-8 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border border-secondary/10 dark:border-white/5 flex flex-col justify-between shadow-lg relative overflow-hidden h-full premium-card premium-card-hover">
+                
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-4">
+                    <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/15">
+                      <CreditCard className="w-3.5 h-3.5" />
+                      Rekening Transfer Resmi
+                    </span>
+                    <span className="text-xs font-semibold px-2.5 py-1 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 rounded-full border border-emerald-500/20">
+                      Aktif
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-2xl bg-secondary/10 dark:bg-secondary/20 flex items-center justify-center text-secondary dark:text-accent font-extrabold text-xl shrink-0">
+                      <Building2 className="w-6 h-6 text-secondary dark:text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif font-extrabold text-xl sm:text-2xl text-secondary dark:text-white">
+                        Bank BNI
+                      </h3>
+                      <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-medium">
+                        Kantor Cabang Serang
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Account Number Box */}
+                  <div className="my-6 p-4 sm:p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-700/50 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                      <p className="text-[11px] uppercase tracking-wider text-zinc-400 dark:text-zinc-400 font-bold mb-1">
+                        Nomor Rekening
+                      </p>
+                      <p className="text-2xl sm:text-3xl font-mono font-extrabold text-secondary dark:text-accent tracking-wider">
+                        2094114481
+                      </p>
+                    </div>
+                    <button
+                      onClick={handleCopy}
+                      type="button"
+                      className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm transition-all duration-200 shrink-0 ${
+                        copied
+                          ? 'bg-emerald-500 text-white shadow-md scale-105'
+                          : 'bg-secondary hover:bg-secondary-dark text-white dark:bg-accent dark:hover:bg-accent-dark dark:text-secondary shadow-sm hover:shadow'
+                      }`}
+                      aria-label="Salin nomor rekening"
+                    >
+                      {copied ? (
+                        <>
+                          <Check className="w-4 h-4" />
+                          <span>Tersalin!</span>
+                        </>
+                      ) : (
+                        <>
+                          <Copy className="w-4 h-4" />
+                          <span>Salin Nomor</span>
+                        </>
+                      )}
+                    </button>
+                  </div>
+
+                  {/* Account Name */}
+                  <div className="space-y-1">
+                    <p className="text-[11px] uppercase tracking-wider text-zinc-400 dark:text-zinc-400 font-bold">
+                      Atas Nama Rekening
+                    </p>
+                    <p className="text-sm sm:text-base font-bold text-zinc-800 dark:text-zinc-200">
+                      Pusat Pengembangan Sumberdaya Wanita Banten
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </motion.div>
 
@@ -86,7 +156,7 @@ export default function Donation() {
                   <h4 className="font-serif font-extrabold text-secondary dark:text-white text-base sm:text-lg">
                     Komitmen Transparansi 100%
                   </h4>
-                  <p className="text-zinc-600 dark:text-zinc-450 text-xs sm:text-sm leading-relaxed font-normal">
+                  <p className="text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm leading-relaxed font-normal">
                     Laporan keuangan PPSW BANTEN diaudit secara berkala oleh Akuntan Publik Independen. Laporan donasi bulanan dikirimkan secara berkala ke alamat email donatur dan dipublikasikan di website.
                   </p>
                 </div>

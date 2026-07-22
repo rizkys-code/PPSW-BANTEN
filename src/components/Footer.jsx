@@ -157,7 +157,7 @@ export default function Footer() {
 
           {/* Programs Column */}
           <div className="lg:col-span-2 space-y-4">
-            <h4 className="font-bold text-sm text-zinc-950 dark:text-white uppercase tracking-widest">Program Binaan</h4>
+            <h4 className="font-bold text-sm text-zinc-950 dark:text-white uppercase tracking-widest">Program Dampingan</h4>
             <ul className="space-y-2.5">
               {programLinks.map((link) => (
                 <li key={link.name}>
